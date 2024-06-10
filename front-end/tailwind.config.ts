@@ -10,11 +10,19 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        "black-base": "rgba(14, 67, 92, 1)",
+      },
+      boxShadow: {
+        "gray-rgba": "0 14px 20px 0px rgba(42, 51, 83, 0.8)",
+      },
+      dropShadow: {
+        "purple-small": "drop-shadow(0px 4px 30px rgba(118, 61, 176, 1))",
       },
     },
   },
   plugins: [],
 };
 export default config;
+

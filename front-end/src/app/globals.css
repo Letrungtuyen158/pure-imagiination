@@ -25,9 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@layer base {
+  .container-full {
+    @apply mx-auto max-w-full w-[1920px] px-[238px];
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
