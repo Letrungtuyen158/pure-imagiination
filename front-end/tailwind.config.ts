@@ -15,7 +15,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       colors: {
-        "black-base": "rgba(14, 67, 92, 1)",
+        "black-base": "#15191E",
       },
       boxShadow: {
         "gray-rgba": "0 14px 20px 0px rgba(42, 51, 83, 0.8)",
