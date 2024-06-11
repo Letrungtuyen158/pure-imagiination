@@ -1,11 +1,15 @@
 import HeroSection from "@/components/HeroSection";
-import Image from "next/image";
+import CtaSection from "@/components/cta-section/CtaSection";
+import OurPureDreamers from "@/components/our-pure-dreamers/OurPureDreamers";
+import Partner from "@/components/partner/Partner";
 
 export default function Home() {
   return (
-    <main className="space-y-40 mb-40">
+    <main className=' mb-40'>
       <HeroSection />
+      <Partner />
+      <CtaSection />
+      <OurPureDreamers />
     </main>
   );
 }
-
