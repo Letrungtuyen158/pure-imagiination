@@ -12,8 +12,8 @@ export default function Partner() {
         <div className='xl:py-[7.625rem] flex flex-col xl:mt-0 mt-[3.75rem] gap-[3.75rem]'>
           <Marquee pauseOnHover>
             <div className='flex items-center gap-8 justify-center'>
-              {PARTNER_ICONS.map((icon) => (
-                <span className='' key={icon + ""}>
+              {PARTNER_ICONS.map((icon, i) => (
+                <span className='' key={i}>
                   {icon.icon}
                 </span>
               ))}
@@ -21,8 +21,8 @@ export default function Partner() {
           </Marquee>
           <Marquee direction='right' pauseOnHover>
             <div className='flex items-center gap-8 justify-center'>
-              {PARTNER_ICONS.map((icon) => (
-                <span className='' key={icon + ""}>
+              {PARTNER_ICONS.map((icon, i) => (
+                <span className='' key={i}>
                   {icon.icon}
                 </span>
               ))}
