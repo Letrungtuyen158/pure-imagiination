@@ -1,0 +1,49 @@
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}
+
+.custom-left-arrow,
+.custom-right-arrow {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.react-multi-carousel-list {
+  padding: 5rem 0;
+}
+
+.custom-left-arrow {
+  left: 10px;
+}
+
+.custom-right-arrow {
+  right: 10px;
+}
+
+.custom-dot-list-style {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.custom-dot {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.custom-dot.active {
+  color: red;
+}
