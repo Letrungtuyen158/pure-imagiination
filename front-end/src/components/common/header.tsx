@@ -10,7 +10,7 @@ const Header = () => {
           background:
             "linear-gradient(180deg, #FF3EA5 46.5%, rgba(255, 62, 165, 0.00) 100%)",
         }}
-        className="z-10 w-full absolute "
+        className="z-1 w-full absolute "
       >
         <Container>
           <div className="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
