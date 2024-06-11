@@ -121,7 +121,7 @@ export default function CarouselSlide() {
                   layout='responsive'
                   width={400}
                   height={400}
-                  src='https://via.placeholder.com/400x400'
+                  src={creator.avatar}
                   alt={creator.name + "," + creator.position}
                 />
                 <div className='flex flex-col lg:items-start gap-6'>
