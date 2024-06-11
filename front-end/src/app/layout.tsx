@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
 
-const inter = Montserrat({ subsets: ["cyrillic-ext"] });
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pure Imagination",
@@ -27,4 +27,3 @@ export default function RootLayout({
     </html>
   );
 }
-

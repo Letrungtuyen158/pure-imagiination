@@ -7,11 +7,7 @@ interface HoverTextProps {
   classTextNormal?: string;
   classTextHover?: string;
 }
-const HoverText = ({
-  text,
-  classTextNormal,
-  classTextHover,
-}: HoverTextProps) => {
+const HoverText = ({ text, classTextNormal, classTextHover }: HoverTextProps) => {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,23 +19,11 @@ const HoverText = ({
   };
 
   return (
-    <div
-      className="relative h-6 overflow-hidden cursor-pointer"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div
-        className={`absolute w-full transition-transform duration-300 ${
-          hovered ? "-translate-y-full" : "translate-y-0"
-        }`}
-      >
+    <div className="relative w-full h-6 overflow-hidden cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className={`absolute w-full transition-transform duration-300 ${hovered ? "-translate-y-full" : "translate-y-0"}`}>
         <span className={cn("text-white", classTextNormal)}>{text}</span>
       </div>
-      <div
-        className={`absolute w-full transition-transform duration-300 ${
-          hovered ? "translate-y-0" : "translate-y-full"
-        }`}
-      >
+      <div className={`absolute w-full transition-transform duration-300 ${hovered ? "translate-y-0" : "translate-y-full"}`}>
         <span className={cn("text-gray-800", classTextHover)}>{text}</span>
       </div>
     </div>
@@ -47,4 +31,3 @@ const HoverText = ({
 };
 
 export default HoverText;
-
