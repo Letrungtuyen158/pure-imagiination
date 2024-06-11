@@ -28,7 +28,10 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
-
+      backgroundColor: {
+        "pink-color":
+          "linear-gradient(180deg, #FF3EA5 46.5%, rgba(255, 62, 165, 0.00) 100%)",
+      },
       colors: {
         "black-base": "#15191E",
       },
