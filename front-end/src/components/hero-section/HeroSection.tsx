@@ -1,9 +1,8 @@
 import React from "react";
-import Container from "./common/container";
 import Image from "next/image";
-import banner from "../../public/banner.png";
-import TextAnimation from "./textAnimation";
-import DreamAnimation from "./ui/test";
+import banner from "../../../public/banner.png";
+import Container from "../common/container";
+import TextAnimation from "./TextAnimation";
 const HeroSection = () => {
   return (
     <div className="relative  h-[400px] lg:h-[670px] " id="home">

@@ -3,7 +3,15 @@ import React, { useState, useEffect } from "react";
 
 const DreamAnimation: React.FC = () => {
   const [displayText, setDisplayText] = useState<string[]>([]);
-  const textArray = ["", "", "A", "D", "R", "E", "A", "M"];
+  const [phraseIndex, setPhraseIndex] = useState<number>(0);
+  const phrases = [
+    "  A DREAM",
+    " AN IMAGINATION",
+    " A PLAN",
+    " A MISTAKE",
+    " AN IDEA",
+    " A NETWORK",
+  ];
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
@@ -12,8 +20,8 @@ const DreamAnimation: React.FC = () => {
     const addLetters = () => {
       let index = 0;
       intervalId = setInterval(() => {
-        if (index < textArray.length) {
-          setDisplayText((prev) => [...prev, textArray[index]]);
+        if (index < phrases[phraseIndex].length) {
+          setDisplayText((prev) => [...prev, phrases[phraseIndex][index]]);
           index++;
         } else {
           clearInterval(intervalId);
@@ -23,13 +31,14 @@ const DreamAnimation: React.FC = () => {
     };
 
     const removeLetters = () => {
-      let index = textArray.length;
+      let index = phrases[phraseIndex].length;
       intervalId = setInterval(() => {
         if (index > 0) {
           setDisplayText((prev) => prev.slice(0, -1));
           index--;
         } else {
           clearInterval(intervalId);
+          setPhraseIndex((prev) => (prev + 1) % phrases.length);
           timeoutId = setTimeout(addLetters, 300); // Thời gian chờ trước khi thêm lại
         }
       }, 100);
@@ -41,16 +50,12 @@ const DreamAnimation: React.FC = () => {
       clearInterval(intervalId);
       clearTimeout(timeoutId);
     };
-  }, []);
+  }, [phraseIndex]);
 
   return (
     <>
       {displayText.map((char, index) => {
-        return (
-          <span key={index} className={` ${index === 1 && "mr-10"}`}>
-            {char}
-          </span>
-        );
+        return <span key={index}>{char}</span>;
       })}
     </>
   );

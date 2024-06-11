@@ -23,51 +23,6 @@ html {
 body {
   margin: 0;
 }
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes hide {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-}
-
-@keyframes reveal-and-hide {
-  0%,
-  10% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  50%,
-  60% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-}
-#toggle_nav:checked ~ div #hamburger #line {
-  @apply rotate-45 translate-y-1.5;
-}
-
-#toggle_nav:checked ~ div #hamburger #line2 {
-  @apply -rotate-45 -translate-y-1;
-}
 
 @layer base {
   .container-full {

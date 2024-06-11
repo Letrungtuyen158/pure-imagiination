@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/common/header";
-import Footer from "@/components/common/footer";
+import Header from "@/components/layouts/header";
+import Footer from "@/components/layouts/footer";
 
 const inter = Montserrat({ subsets: ["cyrillic-ext"] });
 

@@ -1,8 +1,8 @@
 import Container from "@/components/common/container";
 import CtaButton from "@/components/common/cta-button";
 import { CTA_DATA } from "@/components/cta-section/data";
-import Play from "@/components/icon/Play";
-import Star from "@/components/icon/Star";
+import Play from "@/components/common/icon/Play";
+import Star from "@/components/common/icon/Star";
 import Image from "next/image";
 import React from "react";
 

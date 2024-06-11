@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { TextGenerateEffect } from "./ui/text-genneratte-effecct";
-import DreamAnimation from "./ui/test";
+import React from "react";
+import DreamAnimation from "../common/ui/TextAnimationInfity";
 const words = ["D", "R", "E", "A", "M"];
 const TextAnimation = () => {
   return (
