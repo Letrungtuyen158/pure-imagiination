@@ -65,13 +65,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="container mx-auto text-center mt-6 lg:mt-12">
-          <span className=" cursor-default text-center text-[50px] lg:text-[197.651px] font-bold custom-text-stroke mr-[20px] lg:mr-[55px] hover:custom-text-stroke-hover">DREAM</span>
-          <span className="cursor-default text-[#FFF] text-center font-montserrat text-[50px] lg:text-[197.651px] font-bold hover:text-purple-300 transition duration-500">BIG</span>
+          <span className=" cursor-default text-center text-4xl sm:text-[50px] lg:text-[197.651px] font-bold custom-text-stroke mr-[20px] lg:mr-[55px] hover:custom-text-stroke-hover">DREAM</span>
+          <span className="cursor-default text-[#FFF] text-center font-montserrat text-4xl sm:text-[50px] lg:text-[197.651px] font-bold hover:text-purple-300 transition duration-500">BIG</span>
           <br />
-          <span className="cursor-default text-[#FFF] text-center font-montserrat text-[50px] lg:text-[164.945px] font-bold hover:text-purple-300 transition duration-500  mr-[20px] lg:mr-[55px]">
+          <span className="cursor-default text-[#FFF] text-center font-montserrat text-4xl sm:text-[50px] lg:text-[164.945px] font-bold hover:text-purple-300 transition duration-500  mr-[20px] lg:mr-[55px]">
             EARN
           </span>
-          <span className="cursor-default text-center font-montserrat text-[50px] lg:text-[164.945px] font-bold custom-text-stroke2 hover:custom-text-stroke2-hover">BIGGER</span>
+          <span className="cursor-default text-center font-montserrat text-4xl sm:text-[50px] lg:text-[164.945px] font-bold custom-text-stroke2 hover:custom-text-stroke2-hover">BIGGER</span>
         </div>
       </Container>
     </footer>

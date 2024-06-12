@@ -16,9 +16,9 @@ export default function CtaSection() {
           <div className="space-y-3 lg:w-[50rem]">
             <div className="">
               <span className="text-primary-pink text-6xl font-extrabold  leading-[72px]">WHO </span>
-              <span className="text-zinc-900 text-6xl font-extrabold  leading-[72px]">WE ARE?</span>
+              <span className="text-black-base text-6xl font-extrabold  leading-[72px]">WE ARE?</span>
             </div>
-            <div className="text-zinc-900 text-xl font-semibold  leading-[30px]">{CTA_DATA.title}</div>
+            <div className="text-black-base text-xl font-semibold  leading-[30px]">{CTA_DATA.title}</div>
             <div className="max-w-[737px] py-3">
               <p className="text-gray-700 text-base font-normal  leading-relaxed">
                 {CTA_DATA.description}
@@ -30,21 +30,21 @@ export default function CtaSection() {
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-zinc-900 text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[0]}</div>
+                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[0]}</div>
                 </div>
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-zinc-900 text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[1]}</div>
+                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[1]}</div>
                 </div>
               </div>
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-zinc-900 text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[2]}</div>
+                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[2]}</div>
                 </div>
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-zinc-900 text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[3]}</div>
+                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[3]}</div>
                 </div>
               </div>
             </div>

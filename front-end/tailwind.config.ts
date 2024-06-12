@@ -20,6 +20,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "thing-offer": "url('/front-end/public/cta-banner.png')",
       },
       backgroundColor: {
         "pink-color": "linear-gradient(180deg, #FF3EA5 46.5%, rgba(255, 62, 165, 0.00) 100%)",
@@ -30,6 +31,7 @@ const config: Config = {
       },
       boxShadow: {
         "gray-rgba": "0 14px 20px 0px rgba(42, 51, 83, 0.8)",
+        "purple-rgba": "26px 26px 0px 0px rgba(214, 0, 255, 0.4)",
       },
       dropShadow: {
         "purple-small": "drop-shadow(0px 4px 30px rgba(118, 61, 176, 1))",

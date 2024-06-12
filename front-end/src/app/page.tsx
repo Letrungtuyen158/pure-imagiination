@@ -7,6 +7,7 @@ import Quote from "@/components/quote/Quote";
 import { QUOTE_DATA } from "@/components/quote/quote.constanst";
 import SectorAnimation from "@/components/sector-animation/SectorAnimation";
 import SloganAnimation from "@/components/slogan-animation/SloganAnimation";
+import ThingOffer from "@/components/thing-offer/ThingOffer";
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
       <Partner />
       <CtaSection />
       <OurPureDreamers />
-      <Quote title={QUOTE_DATA.NO_MORE_FLOP.title} description={QUOTE_DATA.NO_MORE_FLOP.description} />
-      <SectorAnimation />
       <Quote title={QUOTE_DATA.NO_MORE_HEADACHE.title} description={QUOTE_DATA.NO_MORE_HEADACHE.description} />
+      <SectorAnimation />
+      <ThingOffer />
+      <Quote title={QUOTE_DATA.NO_MORE_FLOP.title} description={QUOTE_DATA.NO_MORE_FLOP.description} />
       <SloganAnimation />
       <FormContactSection />
     </main>
