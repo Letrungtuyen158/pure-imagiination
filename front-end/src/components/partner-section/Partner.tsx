@@ -6,7 +6,7 @@ export default function Partner() {
   return (
     <div className="w-full h-[618px] overflow-hidden py-[6.25rem] relative bg-[#FF3EA5]">
       <div>
-        <div className="text-center text-white text-[40px] lg:text-5xl font-bold  leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
+        <div className="text-center text-white text-[40px] lg:text-5xl font-bold tracking-wide leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
         <div className="xl:py-[7.625rem] flex flex-col xl:mt-0 mt-[3.75rem] gap-[3.75rem]">
           <Marquee pauseOnHover>
             <div className="flex items-center gap-8 justify-center">

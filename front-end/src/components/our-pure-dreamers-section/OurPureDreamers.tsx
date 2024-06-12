@@ -50,8 +50,8 @@ export default function CarouselSlide() {
       </div>
       <div className="max-w-[1920px] mx-auto px-[35px]  lg:px-[100px]  xxl:px-[20px]">
         <div className="mt-28 mb-4 text-center">
-          <span className="text-zinc-900 text-6xl font-extrabold leading-[72px]">OUR </span>
-          <span className="text-pink-500 text-6xl font-extrabold leading-[72px]">PURE DREAMERS</span>
+          <span className="text-zinc-900 text-6xl font-extrabold tracking-wide leading-[72px]">OUR </span>
+          <span className="text-primary-pink text-6xl font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
         </div>
         <Carousel
           responsive={responsive}
@@ -72,14 +72,15 @@ export default function CarouselSlide() {
                   layout="responsive"
                   width={400}
                   height={400}
+                  placeholder="blur"
                   src={creator.avatar}
                   alt={creator.name + "," + creator.position}
                 />
                 <div className="flex flex-col lg:items-start gap-6">
-                  <div className="flex flex-col lg:items-start max-w-[757px] gap-2">
-                    <p className="text-center text-pink-500 text-[24px] sm:text-[32px] font-bold leading-[28px] sm:leading-[38.40px]">{creator.name}</p>
-                    <p className="text-center text-gray-700 text-lg sm:text-2xl font-medium leading-[24px] sm:leading-[28.80px]">{creator.position}</p>
-                    <p className="text-slate-500 text-base sm:text-lg font-medium leading-[24px] xl:leading-[28.80px]">{creator.introduce}</p>
+                  <div className="flex flex-col lg:items-start max-w-[768px] gap-2">
+                    <p className="text-center text-primary-pink text-[24px] sm:text-[32px] font-bold tracking-wide leading-[28px] sm:leading-[38.40px]">{creator.name}</p>
+                    <p className="text-center text-gray-700 text-lg sm:text-2xl font-medium leading-[24px] tracking-wide sm:leading-[28.80px]">{creator.position}</p>
+                    <p className="text-slate-500 text-base sm:text-lg font-normal leading-[24px] tracking-wide xl:leading-[28.80px]">{creator.introduce}</p>
                   </div>
                   <div className="flex justify-start items-center gap-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-100 rounded-full relative">
