@@ -5,7 +5,7 @@ import React from "react";
 export default function CtaButton({ children, className }: { children: string; className?: string }) {
   return (
     <button className={cn("pl-4 group pr-2 py-2 bg-primary-pink rounded-[100px] justify-start items-center gap-2 inline-flex")}>
-      <div className={cn("text-center text-white capitalize !text-xl !font-medium leading-normal", className)}>{children}</div>
+      <div className={cn("text-center text-white capitalize sm:!text-xl !font-medium leading-normal", className)}>{children}</div>
       <div className="w-9 h-9 relative">
         <div className="w-9 h-9 left-0 top-0 absolute bg-white rounded-[100px]" />
         <div className="w-3 h-3 left-[12px] top-[12px] absolute justify-center items-center inline-flex">

@@ -2,20 +2,14 @@ import { ReactNode } from "react";
 
 export interface ReasonType {
   title: string;
-  description: ReactNode;
+  description: string;
   icon: ReactNode;
 }
 
 export const REASON_DATA: ReasonType[] = [
   {
     title: "Connection",
-    description: (
-      <span>
-        Connect with fellow creators and
-        <br />
-        expand your network
-      </span>
-    ),
+    description: "Connect with fellow creators and expand your network",
     icon: (
       <svg width="80" height="80" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -29,13 +23,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Secure",
-    description: (
-      <span>
-        Connect with fellow creators and
-        <br />
-        expand your network
-      </span>
-    ),
+    description: "Connect with fellow creators and expand your network",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -49,13 +37,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "GROWTH",
-    description: (
-      <span>
-        We grow creators,
-        <br />
-        not just channels
-      </span>
-    ),
+    description: "We grow creators, not just channels",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -69,13 +51,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Incomeboost",
-    description: (
-      <span>
-        Our mission to help you achieve
-        <br />
-        financial growth.
-      </span>
-    ),
+    description: "Our mission to help you achieve financial growth.",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -89,13 +65,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Work effciency",
-    description: (
-      <span>
-        Save time, work smarter and
-        <br />
-        achieve more.
-      </span>
-    ),
+    description: "Save time, work smarter and achieve more.",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -109,13 +79,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Transperancy",
-    description: (
-      <span>
-        Connect with fellow creators and
-        <br />
-        expand your network
-      </span>
-    ),
+    description: "Connect with fellow creators and expand your network",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

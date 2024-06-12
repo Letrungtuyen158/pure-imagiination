@@ -16,11 +16,11 @@ export default function ReasonSection() {
             We’ll ensure you get the most out of your talent while you focus on what you do best
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 xl:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
           {REASON_DATA.map((item, idx) => {
             return (
               <div key={idx} className="xl:px-[50px] p-6 xl:pt-14 xl:pb-[56.80px] rounded-3xl border border-[#FFE2F2] hover:border-primary-pink justify-center items-center inline-flex group">
-                <div className="self-stretch md:flex-row flex-col justify-start items-center gap-8 inline-flex">
+                <div className="self-stretch lg:flex-row flex-col justify-start items-center gap-8 inline-flex">
                   <div className="h-20 w-20 relative">
                     <svg
                       className="absolute top-1/2 scale-0 group-hover:scale-100 group-hover:opacity-100 opacity-0  transition-all duration-300 -z-10 left-1/2 -translate-x-[50%] -translate-y-[40%]"
@@ -39,8 +39,12 @@ export default function ReasonSection() {
                     <div className="*:group-hover:stroke-white *:group-hover:scale-75 *:transition-all *:duration-300 stroke-black">{item.icon}</div>
                   </div>
                   <div className="flex-col justify-start items-start gap-3 inline-flex">
-                    <div className="min-w-[144.54px] h-6 text-black-base transition-all duration-300 group-hover:text-primary-pink text-xl font-extrabold uppercase">{item.title}</div>
-                    <div className="w-[268.23px] h-[51.20px] text-slate-500 transition-all duration-300 group-hover:text-pink-950 text-base font-normal leading-relaxed">{item.description}</div>
+                    <div className="min-w-[144.54px] w-full text-center lg:text-left min-h-6 text-black-base transition-all duration-300 group-hover:text-primary-pink text-xl font-extrabold uppercase">
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="max-w-[268.23px] w-full text-center lg:text-left min-h-[51.20px] text-slate-500 transition-all duration-300 group-hover:text-pink-950 text-base font-normal leading-relaxed">
+                      <p>{item.description}</p>
+                    </div>
                   </div>
                 </div>
               </div>

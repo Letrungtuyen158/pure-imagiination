@@ -68,10 +68,11 @@ export default function CarouselSlide() {
             return (
               <div key={i} className="px-20 py-8 justify-start flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
                 <Image
-                  className="rounded-full min-w-20 min-h-20 max-w-[400px] max-h-[400px] sm:mt-0"
+                  className="rounded-full min-w-20 select-none min-h-20 max-w-[400px] max-h-[400px] sm:mt-0"
                   layout="responsive"
                   width={400}
                   height={400}
+                  draggable={false}
                   placeholder="blur"
                   src={creator.avatar}
                   alt={creator.name + "," + creator.position}
