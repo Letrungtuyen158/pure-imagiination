@@ -79,7 +79,7 @@ export default function CarouselSlide() {
                 <div className="flex flex-col lg:items-start gap-6">
                   <div className="flex flex-col lg:items-start max-w-[768px] gap-2">
                     <p className="text-center text-primary-pink text-[24px] sm:text-[32px] font-bold tracking-wide leading-[28px] sm:leading-[38.40px]">{creator.name}</p>
-                    <p className="text-center text-gray-700 text-lg sm:text-2xl font-medium leading-[24px] tracking-wide sm:leading-[28.80px]">{creator.position}</p>
+                    <p className="text-center text-gray-700 mb-4 text-lg sm:text-2xl font-medium leading-[24px] tracking-wide sm:leading-[28.80px]">{creator.position}</p>
                     <p className="text-slate-500 text-base sm:text-lg font-normal leading-[24px] tracking-wide xl:leading-[28.80px]">{creator.introduce}</p>
                   </div>
                   <div className="flex justify-start items-center gap-4">
