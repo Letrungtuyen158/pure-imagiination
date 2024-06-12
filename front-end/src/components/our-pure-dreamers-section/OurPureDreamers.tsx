@@ -51,7 +51,7 @@ export default function CarouselSlide() {
       <div className="max-w-[1920px] mx-auto px-[35px]  lg:px-[100px]  xxl:px-[20px]">
         <div className="mt-28 mb-4 text-center">
           <span className="text-black-base text-4xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">OUR </span>
-          <span className="text-primary-pink text-5xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
+          <span className="text-primary-pink text-4xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
         </div>
         <Carousel
           responsive={responsive}
@@ -66,9 +66,9 @@ export default function CarouselSlide() {
           dotListClass="custom-dot-list-style">
           {creators.map((creator, i) => {
             return (
-              <div key={i} className="px-20 py-8 justify-center flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
+              <div key={i} className="px-20 py-8 justify-start flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
                 <Image
-                  className="rounded-full max-w-[400px] max-h-[400px] sm:mt-0 mt-20"
+                  className="rounded-full min-w-20 min-h-20 max-w-[400px] max-h-[400px] sm:mt-0"
                   layout="responsive"
                   width={400}
                   height={400}

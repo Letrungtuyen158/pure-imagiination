@@ -6,6 +6,7 @@ const config: Config = {
     extend: {
       screens: {
         xxl: "1920px",
+        xl: "1440px",
       },
 
       animation: {

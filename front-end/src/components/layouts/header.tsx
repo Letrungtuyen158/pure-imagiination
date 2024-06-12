@@ -50,7 +50,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div
-                    className="flex group w-[238px] cursor-pointer lg:w-[250px] items-center h-[36px] rounded-full gap-[8px] text-white  bg-gray-300 bg-opacity-30"
+                    className="flex group min-w-[220px] cursor-pointer items-center h-[36px] rounded-full gap-[8px] text-white  bg-gray-300 bg-opacity-30"
                     style={{
                       backdropFilter: "blur(10px)",
                       padding: "8px 8px 8px 16px",

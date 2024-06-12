@@ -23,6 +23,12 @@
   padding: 5rem 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .react-multi-carousel-list {
+    padding: 0rem 0;
+  }
+}
+
 .custom-left-arrow {
   left: 10px;
 }
