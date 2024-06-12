@@ -10,6 +10,7 @@ import SloganAnimation from "@/components/slogan-animation/SloganAnimation";
 import ThingOffer from "@/components/thing-offer/ThingOffer";
 import SecondCTA from "@/components/second-cta/SecondCTA";
 import DoTheBest from "@/components/do-the-best/DoTheBest";
+import ReasonSection from "@/components/reason-section/ReasonSection";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Quote title={QUOTE_DATA.NO_MORE_FLOP.title} description={QUOTE_DATA.NO_MORE_FLOP.description} />
       <SecondCTA />
       <SloganAnimation />
+      <ReasonSection />
       <FormContactSection />
       <DoTheBest />
     </main>
