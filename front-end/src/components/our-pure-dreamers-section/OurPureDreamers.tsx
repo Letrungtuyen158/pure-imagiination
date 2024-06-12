@@ -48,14 +48,14 @@ export default function CarouselSlide() {
           <path d="M0 0L1920 88V0H0Z" fill="#FFECF6" />
         </svg>
       </div>
-      <Container>
+      <div className="max-w-[1920px] mx-auto px-[35px]  lg:px-[100px]  xxl:px-[20px]">
         <div className="mt-28 mb-4 text-center">
-          <span className="text-zinc-900 text-6xl font-extrabold font-['Montserrat'] leading-[72px]">OUR </span>
-          <span className="text-pink-500 text-6xl font-extrabold font-['Montserrat'] leading-[72px]">PURE DREAMERS</span>
+          <span className="text-zinc-900 text-6xl font-extrabold leading-[72px]">OUR </span>
+          <span className="text-pink-500 text-6xl font-extrabold leading-[72px]">PURE DREAMERS</span>
         </div>
         <Carousel
           responsive={responsive}
-          // autoPlay={true}
+          autoPlay={true}
           swipeable={true}
           draggable={true}
           showDots={true}
@@ -66,14 +66,21 @@ export default function CarouselSlide() {
           dotListClass="custom-dot-list-style">
           {creators.map((creator, i) => {
             return (
-              <div key={i} className="px-20 py-8 flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
-                <Image className="rounded-full sm:w-full !w-[260px] sm:mt-0 mt-20" layout="responsive" width={400} height={400} src={creator.avatar} alt={creator.name + "," + creator.position} />
+              <div key={i} className="px-20 py-8 justify-center flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
+                <Image
+                  className="rounded-full max-w-[400px] max-h-[400px] sm:mt-0 mt-20"
+                  layout="responsive"
+                  width={400}
+                  height={400}
+                  src={creator.avatar}
+                  alt={creator.name + "," + creator.position}
+                />
                 <div className="flex flex-col lg:items-start gap-6">
-                  <div className="flex flex-col lg:items-start gap-2">
-                    <p className="text-center text-pink-500 text-[24px] sm:text-[32px] font-bold font-['Montserrat'] leading-[28px] sm:leading-[38.40px]">{creator.name}</p>
-                    <p className="text-center text-gray-700 text-lg sm:text-2xl font-medium font-['Montserrat'] leading-[24px] sm:leading-[28.80px]">{creator.position}</p>
+                  <div className="flex flex-col lg:items-start max-w-[757px] gap-2">
+                    <p className="text-center text-pink-500 text-[24px] sm:text-[32px] font-bold leading-[28px] sm:leading-[38.40px]">{creator.name}</p>
+                    <p className="text-center text-gray-700 text-lg sm:text-2xl font-medium leading-[24px] sm:leading-[28.80px]">{creator.position}</p>
+                    <p className="text-slate-500 text-base sm:text-lg font-medium leading-[24px] xl:leading-[28.80px]">{creator.introduce}</p>
                   </div>
-                  <p className="text-slate-500 text-base sm:text-lg font-medium font-['Montserrat'] leading-[24px] xl:leading-[28.80px]">{creator.introduce}</p>
                   <div className="flex justify-start items-center gap-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-100 rounded-full relative">
                       <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -134,7 +141,7 @@ export default function CarouselSlide() {
             );
           })}
         </Carousel>
-      </Container>
+      </div>
     </div>
   );
 }
