@@ -11,15 +11,13 @@ export default function CustomMarquee({
   onlyIcon?: boolean;
 }) {
   return (
-    <Marquee autoFill pauseOnHover direction={direction} className="">
-      <div className="flex items-center gap-16 justify-center rotate-[-2.37]">
-        {items.map((item, i) => (
-          <div key={i} className="flex gap-[60px]">
-            <span className="">{item.icon}</span>
-            {!onlyIcon && <span className=" text-center text-white text-[40px] font-bold leading-[52px]">{item.name}</span>}
-          </div>
-        ))}
-      </div>
+    <Marquee pauseOnHover direction={direction}>
+      {items.map((item, i) => (
+        <div key={i} className="flex gap-[60px] ml-[60px]">
+          <span className="">{item.icon}</span>
+          {!onlyIcon && <span className=" text-center text-white text-[40px] font-bold leading-[52px]">{item.name}</span>}
+        </div>
+      ))}
     </Marquee>
   );
 }

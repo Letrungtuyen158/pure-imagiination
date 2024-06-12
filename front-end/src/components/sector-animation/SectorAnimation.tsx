@@ -16,7 +16,7 @@ export default function SectorAnimation() {
           <path d="M0 88L1920 0V88H0Z" fill="#FFECF6" />
         </svg>
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="space-y-6">
         <CustomMarquee items={SECTOR_ICONS.SECTOR_1} direction="left" />
         <CustomMarquee items={SECTOR_ICONS.SECTOR_2} direction="right" />
       </div>
