@@ -21,6 +21,7 @@ export default function ThingOffer() {
                     src={Banner}
                     className="absolute opacity-0 group-hover:opacity-100 z-[3] w-full h-full rounded-[32px] duration-500 transition-all object-cover"
                     width={200}
+                    placeholder="blur"
                     height={200}
                     alt={item.title}
                   />
