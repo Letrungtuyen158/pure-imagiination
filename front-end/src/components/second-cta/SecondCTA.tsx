@@ -13,7 +13,7 @@ export default function SecondCTA() {
           <span className="text-primary-pink text-6xl font-extrabold leading-[72px]">WE OFFER</span>
         </div>
         <div className="space-y-[3.125rem]">
-          <div className="flex flex-col justify-center group duration-300 relative transition-all">
+          <div className="flex flex-col justify-center duration-300 relative transition-all">
             <div className="max-w-[1444px] w-full mx-auto h-[300px] relative">
               <div className="w-full min-h-[400px] lg:min-h-[300px] md:max-h-[300px] absolute inset-0 bg-gradient-to-r rounded-[32px] from-black-base from-40% to-transparent" />
               <Image

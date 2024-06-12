@@ -12,7 +12,7 @@ const HeroSection = () => {
       <Container>
         <div className="relative pt-32 lg:pt-36 ml-auto ">
           <TextAnimation />
-          <button type="button" className="flex p-2 text-center mx-auto items-center gap-2 rounded-full bg-opacity-30 backdrop-blur-md">
+          <button type="button" className="flex p-2 text-center group mx-auto items-center gap-2 rounded-full bg-opacity-30 backdrop-blur-md">
             <p className="text-white text-center  text-2xl font-bold leading-normal capitalize">START YOUR DREAM</p>
             <div className="w-9 h-9 relative">
               <div className="w-9 h-9 left-0 top-0 absolute bg-[#FF3EA5] rounded-[100px]" />
