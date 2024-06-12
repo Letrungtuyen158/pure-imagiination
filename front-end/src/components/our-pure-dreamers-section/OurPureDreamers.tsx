@@ -42,7 +42,7 @@ export default function CarouselSlide() {
     },
   };
   return (
-    <div className="bg-white relative py-10">
+    <div id="our-dreamers" className="bg-white relative py-10">
       <div className="absolute top-0 right-0">
         <svg width="1920" height="88" viewBox="0 0 1920 88" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0L1920 88V0H0Z" fill="#FFECF6" />

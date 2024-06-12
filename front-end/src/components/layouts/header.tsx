@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../common/container";
 import Logo from "../common/icon/Logo";
 import HoverText from "../common/ui/HoverText";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -15,9 +16,9 @@ const Header = () => {
           <div className="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
             <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" className="hidden peer" />
             <div className="relative z-20 w-full flex justify-between lg:w-max md:px-0">
-              <a href="#home" aria-label="logo" className="flex space-x-2 items-center">
+              <Link href="/" aria-label="logo" className="flex space-x-2 items-center">
                 <Logo />
-              </a>
+              </Link>
               <div className="relative flex items-center lg:hidden max-h-10">
                 <label role="button" htmlFor="toggle_nav" aria-label="humburger" id="hamburger" className="relative  p-6 -mr-6">
                   <div aria-hidden="true" id="line" className="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"></div>
@@ -37,16 +38,24 @@ const Header = () => {
                 <div className="w-full tracking-wide font-medium lg:text-sm flex-col flex items-center justify-end lg:flex-row gap-6 lg:gap-0">
                   <div className=" flex flex-col items-center gap-4 lg:gap-0 lg:flex-row justify-end w-full">
                     <div className="w-[100px] leading-[23px]">
-                      <HoverText text="ABOUT PI" />
+                      <Link href={"#about"}>
+                        <HoverText text="ABOUT PI" />
+                      </Link>
                     </div>
                     <div className="w-[150px] leading-[23px]">
-                      <HoverText text="OUR DREAMERS" />
+                      <Link href={"#our-dreamers"}>
+                        <HoverText text="OUR DREAMERS" />
+                      </Link>
                     </div>
                     <div className="w-[130px] leading-[23px]">
-                      <HoverText text="OUR SUPPORT" />
+                      <Link href={"#our-support"}>
+                        <HoverText text="OUR SUPPORT" />
+                      </Link>
                     </div>
                     <div className="w-[110px] leading-[23px]">
-                      <HoverText text="CONTACT US" />
+                      <Link href={"#contact-us"}>
+                        <HoverText text="CONTACT US" />
+                      </Link>
                     </div>
                   </div>
                   <div

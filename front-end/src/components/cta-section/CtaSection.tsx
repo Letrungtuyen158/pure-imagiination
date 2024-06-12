@@ -9,7 +9,7 @@ import VideoThumbnail from "../common/Video-thumnail";
 
 export default function CtaSection() {
   return (
-    <div className="w-full bg-[#FFECF6]">
+    <div id="about" className="w-full bg-[#FFECF6]">
       <Container>
         <div className="lg:py-40 py-16 lg:flex-row flex-col mx-auto flex gap-10 lg:gap-[5.75rem] items-center justify-center relative">
           <VideoThumbnail />

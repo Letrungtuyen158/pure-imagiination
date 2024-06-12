@@ -6,7 +6,7 @@ import { THING_OFFER } from "./thing-offer.constanst";
 
 export default function ThingOffer() {
   return (
-    <div className="py-32 pb-[10.75rem] bg-rose-50 overflow-hidden">
+    <div id="our-support" className="py-32 pb-[10.75rem] bg-rose-50 overflow-hidden">
       <Container>
         <div className="text-center mb-[4.75rem]">
           <span className="text-black-base text-6xl font-extrabold leading-[72px]">THIS IS THINGS </span>

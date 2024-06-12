@@ -13,25 +13,27 @@ const Footer = () => {
   return (
     <footer className="bg-[#FF3EA5]  text-white pt-10 pb-20">
       <Container>
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-8  md:text-left">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-8 text-center  md:text-left">
           <div>
-            <h2 className="flex cursor-default w-[135.555px] h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
-              <HoverText text={"CONTACT US"} />
+            <h2 className="flex cursor-default min-w-[135.555px] h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
+              <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" classTextHover="block text-center" text={"CONTACT US"} />
             </h2>
-            <div className="flex flex-col items-start gap-4">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <p className="flex w-[282.26px] h-6 flex-col justify-center text-[var(--Gray-Gray-01)]  text-[16px] font-medium">hello@pureimagination.asia</p>
               <p className="flex w-[124.422px] h-6 flex-col justify-center text-[var(--Gray-Gray-01)]  text-[16px] font-medium">0928280899</p>
             </div>
           </div>
           <div>
             <h2 className="font-bold  cursor-default text-xl mb-4">
-              <HoverText text={"POWERED BY"} />
+              <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" classTextHover="block text-center" text={"POWERED BY"} />
             </h2>
-            <Google />
+            <div className="flex md:justify-start justify-center">
+              <Google />
+            </div>
           </div>
           <div>
             <h2 className="font-bold cursor-default text-xl mb-4">
-              <HoverText text={"FOLLOW US"} />
+              <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" classTextHover="block text-center" text={"FOLLOW US"} />
             </h2>
             <div className="flex justify-center md:justify-start space-x-4">
               <Facebook />
