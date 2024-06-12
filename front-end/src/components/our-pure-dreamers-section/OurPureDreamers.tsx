@@ -50,8 +50,8 @@ export default function CarouselSlide() {
       </div>
       <div className="max-w-[1920px] mx-auto px-[35px]  lg:px-[100px]  xxl:px-[20px]">
         <div className="mt-28 mb-4 text-center">
-          <span className="text-black-base text-6xl font-extrabold tracking-wide leading-[72px]">OUR </span>
-          <span className="text-primary-pink text-6xl font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
+          <span className="text-black-base text-4xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">OUR </span>
+          <span className="text-primary-pink text-5xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
         </div>
         <Carousel
           responsive={responsive}
