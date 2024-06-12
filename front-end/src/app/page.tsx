@@ -9,6 +9,7 @@ import SectorAnimation from "@/components/sector-animation/SectorAnimation";
 import SloganAnimation from "@/components/slogan-animation/SloganAnimation";
 import ThingOffer from "@/components/thing-offer/ThingOffer";
 import SecondCTA from "@/components/second-cta/SecondCTA";
+import DoTheBest from "@/components/do-the-best/DoTheBest";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <SecondCTA />
       <SloganAnimation />
       <FormContactSection />
+      <DoTheBest />
     </main>
   );
 }
