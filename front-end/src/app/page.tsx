@@ -6,6 +6,7 @@ import Partner from "@/components/partner-section/Partner";
 import Quote from "@/components/quote/Quote";
 import { QUOTE_DATA } from "@/components/quote/quote.constanst";
 import SectorAnimation from "@/components/sector-animation/SectorAnimation";
+import SloganAnimation from "@/components/slogan-animation/SloganAnimation";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Quote title={QUOTE_DATA.NO_MORE_FLOP.title} description={QUOTE_DATA.NO_MORE_FLOP.description} />
       <SectorAnimation />
       <Quote title={QUOTE_DATA.NO_MORE_HEADACHE.title} description={QUOTE_DATA.NO_MORE_HEADACHE.description} />
+      <SloganAnimation />
       <FormContactSection />
     </main>
   );
