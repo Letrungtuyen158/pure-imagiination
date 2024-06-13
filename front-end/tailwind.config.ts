@@ -29,6 +29,8 @@ const config: Config = {
       colors: {
         "black-base": "#15191E",
         "primary-pink": "#FF3EA5",
+        "gradient-from": "#D600FF",
+        "gradient-to": "#FFEA28",
       },
       boxShadow: {
         "gray-rgba": "0 14px 20px 0px rgba(42, 51, 83, 0.8)",

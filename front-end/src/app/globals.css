@@ -44,6 +44,14 @@ body {
   --tw-text-opacity: 1;
 }
 
+.gradient-text {
+  background: linear-gradient(92deg, #d600ff 30%, #ffea28 92.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 @layer base {
   .container-full {
     @apply mx-auto max-w-full w-[1920px] px-[238px];

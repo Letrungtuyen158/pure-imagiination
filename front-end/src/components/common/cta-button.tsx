@@ -2,9 +2,9 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 
-export default function CtaButton({ children, className }: { children: string; className?: string }) {
+export default function CtaButton({ children, className, type = "button", classNameContainer }: { children: string; className?: string; type: any; classNameContainer?: string }) {
   return (
-    <button className={cn("pl-4 group pr-2 py-2 bg-primary-pink rounded-[100px] justify-start items-center gap-2 inline-flex")}>
+    <button type={type} className={cn("pl-4 group pr-2 py-2 bg-primary-pink rounded-[100px] justify-start items-center gap-2 inline-flex", classNameContainer)}>
       <div className={cn("text-center text-white capitalize sm:!text-xl !font-medium leading-normal", className)}>{children}</div>
       <div className="w-9 h-9 relative">
         <div className="w-9 h-9 left-0 top-0 absolute bg-white rounded-[100px]" />
