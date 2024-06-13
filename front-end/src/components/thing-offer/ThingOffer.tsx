@@ -20,6 +20,8 @@ export default function ThingOffer() {
                     src={item.image}
                     className="absolute opacity-0 group-hover:opacity-100 z-[3] w-full h-full rounded-[32px] duration-500 transition-all object-cover"
                     width={1400}
+                    placeholder="blur"
+                    quality={100}
                     height={300}
                     alt={item.title}
                   />

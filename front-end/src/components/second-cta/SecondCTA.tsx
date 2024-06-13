@@ -17,6 +17,7 @@ export default function SecondCTA() {
                 className="rounded-[32px] min-h-[400px] lg:min-h-[300px] md:h-[300px] object-cover bg-gradient-to-r from-black to-black"
                 width={1444}
                 placeholder="blur"
+                quality={100}
                 height={300}
                 alt={"Get in touch"}
               />

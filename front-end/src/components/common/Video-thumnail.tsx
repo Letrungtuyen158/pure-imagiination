@@ -18,7 +18,7 @@ const VideoThumbnail = () => {
   return (
     <div className="relative">
       <div onClick={handleThumbnailClick}>
-        <Image alt={CTA_DATA.title} placeholder="blur" className="object-center rounded-[2rem]" width={616} height={413} src={CTA_DATA.banner} />
+        <Image alt={CTA_DATA.title} placeholder="blur" className="object-center rounded-[2rem]" quality={100} width={616} height={413} src={CTA_DATA.banner} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <Play />
         </div>

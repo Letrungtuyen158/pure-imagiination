@@ -72,6 +72,7 @@ export default function CarouselSlide() {
                   layout="responsive"
                   width={400}
                   height={400}
+                  quality={100}
                   draggable={false}
                   placeholder="blur"
                   src={creator.avatar}
