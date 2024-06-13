@@ -13,8 +13,8 @@ export default function ReasonSection() {
             <span className="text-zinc-900 text-6xl font-extrabold leading-[78px]">TO JOIN US</span>
           </div>
           <div className="max-w-[1444px] text-center text-gray-700 text-lg font-medium leading-[28.80px]">
-            Your creative vision, our business expertise. Leave the negotiations, deals, and revenue optimization to us. <br />
-            We’ll ensure you get the most out of your talent while you focus on what you do best
+            As a rising star in the creator network space, we&apos;ve quickly attracted top talent. <br />
+            We&apos;re seeking passionate individuals ready to create exceptional content. In return, we offer a supportive community and the tools to help you thrive
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">

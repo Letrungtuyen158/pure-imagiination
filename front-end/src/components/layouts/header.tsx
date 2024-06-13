@@ -64,7 +64,7 @@ const Header = () => {
                       backdropFilter: "blur(10px)",
                       padding: "8px 8px 8px 16px",
                     }}>
-                    <div>START YOUR DREAM</div>
+                    <Link href={"#contact-us"}>START YOUR DREAM</Link>
                     <div className=" relative w-[26px] h-[26px]  bg-[#FF3EA5] rounded-[100px]">
                       <svg
                         width="12"

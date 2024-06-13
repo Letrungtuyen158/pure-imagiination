@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 const DreamAnimation: React.FC = () => {
   const [displayText, setDisplayText] = useState<string[]>([]);
   const [phraseIndex, setPhraseIndex] = useState<number>(0);
-  const phrases = ["  A DREAM", " AN IMAGINATION", " A PLAN", " A MISTAKE", " AN IDEA", " A NETWORK"];
+  const phrases = ["  A DREAM", " IMAGINATION", " A PLAN", " A MISTAKE", " AN IDEA", " A NETWORK"];
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout;

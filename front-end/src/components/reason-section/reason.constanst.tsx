@@ -22,7 +22,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Secure",
-    description: "Connect with fellow creators and expand your network",
+    description: "Secure. Reliable. Guaranteed. Your safety is our commitment",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -74,7 +74,7 @@ export const REASON_DATA: ReasonType[] = [
   },
   {
     title: "Transperancy",
-    description: "Connect with fellow creators and expand your network",
+    description: "We prioritize transparent communication about your revenue",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

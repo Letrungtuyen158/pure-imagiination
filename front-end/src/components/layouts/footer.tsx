@@ -66,12 +66,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container md:space-y-24 xl:space-y-32 mx-auto text-center mt-6 md:mt-16  xl:mt-32">
-          <p className="flex flex-col sm:flex-row justify-center  space-x-[20px] xl:space-x-[55px]">
+        <div className="container md:space-y-24  mx-auto text-center mt-6 md:mt-16   xl:mt-[50px]">
+          <p className="flex flex-col sm:flex-row justify-center  space-x-[20px]">
             <span className=" cursor-default text-center text-5xl sm:text-[96px] xl:text-[197.651px] font-bold custom-text-stroke hover:custom-text-stroke-hover">DREAM</span>
             <span className="cursor-default text-[#FFF] text-center font-montserrat text-5xl sm:text-[96px] xl:text-[197.651px] font-bold hover:text-purple-300 transition duration-500">BIG</span>
           </p>
-          <p className="flex flex-col sm:flex-row justify-center space-x-[20px] xl:space-x-[55px]">
+          <p className="flex flex-col sm:flex-row justify-center space-x-[20px] xl:space-x-[20px] lg:!mt-[30px]">
             <span className="cursor-default text-[#FFF] text-center font-montserrat text-5xl sm:text-[96px] xl:text-[164.945px] font-bold hover:text-purple-300 transition duration-500">EARN</span>
             <span className="cursor-default text-center font-montserrat text-5xl sm:text-[96px] xl:text-[164.945px] font-bold custom-text-stroke2 hover:custom-text-stroke2-hover">BIGGER</span>
           </p>
