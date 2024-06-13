@@ -4,6 +4,7 @@ import Carousel, { ArrowProps, DotProps } from "react-multi-carousel";
 import React from "react";
 import "./style.css";
 import { REASON_DATA } from "@/components/reason-section/reason.constanst";
+import Container from "@/components/common/container";
 
 const CustomLeftArrow = ({ onClick }: ArrowProps) => (
   <button onClick={onClick} className="custom-left-arrow hidden">
@@ -42,10 +43,9 @@ const responsive = {
 
 export default function ReasonSlide() {
   return (
-    <div className="">
+    <Container>
       <Carousel
         responsive={responsive}
-        autoPlay={true}
         swipeable={true}
         draggable={true}
         showDots={true}
@@ -56,7 +56,9 @@ export default function ReasonSlide() {
         dotListClass="custom-dot-list-style">
         {REASON_DATA.map((item, idx) => {
           return (
-            <div key={idx} className="xl:px-[50px] p-6 xl:pt-14 xl:pb-[56.80px] rounded-3xl border border-[#FFE2F2] hover:border-primary-pink justify-center items-center inline-flex group w-full">
+            <div
+              key={"slide" + idx}
+              className="xl:px-[50px] p-6 xl:pt-14 xl:pb-[56.80px] rounded-3xl border border-[#FFE2F2] hover:border-primary-pink justify-center items-center inline-flex group w-full">
               <div className="self-stretch lg:flex-row flex-col justify-start items-center gap-8 inline-flex">
                 <div className="h-20 w-20 relative">
                   <svg
@@ -88,6 +90,6 @@ export default function ReasonSlide() {
           );
         })}
       </Carousel>
-    </div>
+    </Container>
   );
 }

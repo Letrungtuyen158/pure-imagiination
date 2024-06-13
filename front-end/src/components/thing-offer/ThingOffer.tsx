@@ -14,13 +14,14 @@ export default function ThingOffer() {
         <div className="space-y-[3.125rem]">
           {THING_OFFER.map((item, idx) => {
             return (
-              <div key={idx} className="flex flex-col justify-center group duration-300 relative transition-all">
+              <div key={idx + "THING_OFFER"} className="flex flex-col justify-center group duration-300 relative transition-all">
                 <div className="max-w-[1444px] mx-auto min-h-[300px] px-10 sm:px-[60px] bg-white rounded-[32px] relative border border-gray-300 justify-center items-center gap-6 inline-flex duration-500 transition-all  group-hover:border-none bg-transparent xl:gap-[200px] sm:gap-10 lg:flex-row flex-col">
                   <Image
                     src={item.image}
                     className="absolute h-full opacity-0 group-hover:opacity-100 z-[3] w-full rounded-[32px] duration-300 transition-all object-cover"
                     width={1400}
                     placeholder="blur"
+                    priority
                     quality={100}
                     height={300}
                     alt={item.title}

@@ -11,10 +11,11 @@ import ThingOffer from "@/components/thing-offer/ThingOffer";
 import SecondCTA from "@/components/second-cta/SecondCTA";
 import DoTheBest from "@/components/do-the-best/DoTheBest";
 import ReasonSection from "@/components/reason-section/ReasonSection";
+import ReasonSlide from "@/components/reason-section/ReasonSlide";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <HeroSection />
       <Partner />
       <CtaSection />
@@ -26,6 +27,9 @@ export default function Home() {
       <SecondCTA />
       <SloganAnimation />
       <ReasonSection />
+      <div className="sm:hidden mt-12 pb-[7rem]">
+        <ReasonSlide />
+      </div>
       <FormContactSection />
       <DoTheBest />
     </main>

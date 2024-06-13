@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Banner from "/public/get-in-touch.png";
 import CtaButton from "@/components/common/cta-button";
+import ReasonSlide from "@/components/reason-section/ReasonSlide";
 
 export default function SecondCTA() {
   return (
@@ -17,6 +18,7 @@ export default function SecondCTA() {
                 className="rounded-[32px] min-h-[400px] lg:min-h-[300px] md:h-[300px] object-cover bg-gradient-to-r from-black to-black"
                 width={1444}
                 placeholder="blur"
+                priority
                 quality={100}
                 height={300}
                 alt={"Get in touch"}
