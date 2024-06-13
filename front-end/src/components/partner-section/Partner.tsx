@@ -1,4 +1,4 @@
-import { PARTNER_ICONS_1, PARTNER_ICONS_2 } from "@/components/partner-section/partner-icons.constants";
+import { PARTNER_ICONS } from "@/components/partner-section/partner-icons.constants";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -9,16 +9,16 @@ export default function Partner() {
       <div>
         <div className="text-center text-white text-[40px] lg:text-5xl font-bold tracking-wide leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
         <div className="xl:py-[7.625rem] flex flex-col xl:mt-0 mt-[3.75rem] gap-[3.75rem]">
-          <Marquee pauseOnHover>
+          <Marquee pauseOnHover autoFill>
             <div className="flex items-center gap-16 justify-center">
-              {PARTNER_ICONS_1.map((item, idx) => (
+              {PARTNER_ICONS.map((item, idx) => (
                 <Image key={idx} src={item.icon} alt={item.name} width={157} className="max-h-[64.6px] max-w-[157px]" quality={100} height={64.6} />
               ))}
             </div>
           </Marquee>
-          <Marquee direction="right" pauseOnHover>
+          <Marquee direction="right" pauseOnHover autoFill>
             <div className="flex items-center gap-16 justify-center">
-              {PARTNER_ICONS_2.map((item, idx) => (
+              {PARTNER_ICONS.map((item, idx) => (
                 <Image key={idx} src={item.icon} alt={item.name} width={157} className="max-h-[64.6px]" quality={100} height={64.6} />
               ))}
             </div>

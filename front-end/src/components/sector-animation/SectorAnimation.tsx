@@ -4,19 +4,10 @@ import Marquee from "react-fast-marquee";
 
 export default function SectorAnimation() {
   return (
-    <div className="overflow-hidden h-[312px] relative w-full py-24  bg-zinc-900">
-      <div className="absolute top-0 left-0">
-        <svg width="1920" height="78" viewBox="0 0 1920 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1920.59 -0.0415578L3.98921e-06 77.5L5.03717e-05 -21.5L1920.59 -0.0415578Z" fill="#FF3EA5" />
-        </svg>
-      </div>
-      <div className="absolute bottom-0 right-0">
-        <svg width="1920" height="88" viewBox="0 0 1920 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 88L1920 0V88H0Z" fill="#FFECF6" />
-        </svg>
-      </div>
-      <div className="space-y-6 -mt-2 -rotate-[2.37deg]">
-        <Marquee direction="right" pauseOnHover>
+    <div className="overflow-hidden h-[248px] relative w-full py-14 z-[2] -rotate-[2.37deg]  bg-zinc-900">
+      {/* <div className="after:content-[''] after:w-full after:bg-red-500 after:absolute after:h-[300px] after:z-50 after:rotate-[-2.37deg] after:top-[10%] after:*:hidden" /> */}
+      <div className="space-y-6">
+        <Marquee direction="right" pauseOnHover autoFill>
           <div className="flex items-center gap-[3.75rem] ml-[3.75rem] justify-center">
             {SECTOR_ICONS.SECTOR_1.map((item, i) => (
               <div key={i} className="flex items-center gap-[3.75rem]">
@@ -30,7 +21,7 @@ export default function SectorAnimation() {
             ))}
           </div>
         </Marquee>
-        <Marquee direction="left" pauseOnHover>
+        <Marquee direction="left" pauseOnHover autoFill>
           <div className="flex items-center  gap-[3.75rem] ml-[3.75rem] justify-center">
             {SECTOR_ICONS.SECTOR_2.map((item, i) => (
               <div key={i} className="flex items-center gap-[3.75rem]">

@@ -41,7 +41,7 @@ interface PartnerIconsType {
   icon: StaticImport;
 }
 
-export const PARTNER_ICONS_1: PartnerIconsType[] = [
+export const PARTNER_ICONS: PartnerIconsType[] = [
   {
     name: "aceCookLogo",
     icon: aceCookLogo,
@@ -114,9 +114,6 @@ export const PARTNER_ICONS_1: PartnerIconsType[] = [
     name: "knorr",
     icon: knorr,
   },
-];
-
-export const PARTNER_ICONS_2: PartnerIconsType[] = [
   {
     name: "l_oreal",
     icon: l_oreal,
