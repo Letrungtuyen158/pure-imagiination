@@ -2,7 +2,7 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 
-export default function CtaButton({ children, className, type = "button", classNameContainer }: { children: string; className?: string; type: any; classNameContainer?: string }) {
+export default function CtaButton({ children, className, type = "button", classNameContainer }: { children: string; className?: string; type?: any; classNameContainer?: string }) {
   return (
     <button type={type} className={cn("pl-4 group pr-2 py-2 bg-primary-pink rounded-[100px] justify-start items-center gap-2 inline-flex", classNameContainer)}>
       <div className={cn("text-center text-white capitalize sm:!text-xl !font-medium leading-normal", className)}>{children}</div>
