@@ -71,7 +71,7 @@ const Header = () => {
                         height="12"
                         viewBox="0 0 12 12"
                         fill="none"
-                        className="group-hover:rotate-45 absolute duration-300 inset-0 m-auto flex items-center justify-center"
+                        className="group-hover:rotate-[135deg] absolute duration-300 inset-0 m-auto flex items-center justify-center"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_10_39)">
                           <path

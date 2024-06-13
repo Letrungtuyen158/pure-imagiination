@@ -1,5 +1,6 @@
 import Container from "@/components/common/container";
 import { REASON_DATA } from "@/components/reason-section/reason.constanst";
+import ReasonSlide from "@/components/reason-section/ReasonSlide";
 import React from "react";
 
 export default function ReasonSection() {
@@ -19,7 +20,9 @@ export default function ReasonSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
           {REASON_DATA.map((item, idx) => {
             return (
-              <div key={idx} className="xl:px-[50px] p-6 xl:pt-14 xl:pb-[56.80px] rounded-3xl border border-[#FFE2F2] hover:border-primary-pink justify-center items-center inline-flex group">
+              <div
+                key={idx}
+                className="xl:px-[50px] p-6 xl:pt-14 xl:pb-[56.80px] rounded-3xl border border-[#FFE2F2] hover:border-primary-pink justify-center items-center hidden sm:inline-flex group">
                 <div className="self-stretch lg:flex-row flex-col justify-start items-center gap-8 inline-flex">
                   <div className="h-20 w-20 relative">
                     <svg
@@ -50,6 +53,9 @@ export default function ReasonSection() {
               </div>
             );
           })}
+          <div className="sm:hidden">
+            <ReasonSlide />
+          </div>
         </div>
       </div>
     </Container>

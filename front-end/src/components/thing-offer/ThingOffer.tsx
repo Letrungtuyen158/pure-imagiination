@@ -18,14 +18,14 @@ export default function ThingOffer() {
                 <div className="max-w-[1444px] mx-auto min-h-[300px] px-10 sm:px-[60px] bg-white rounded-[32px] relative border border-gray-300 justify-center items-center gap-6 inline-flex duration-500 transition-all  group-hover:border-none bg-transparent xl:gap-[200px] sm:gap-10 lg:flex-row flex-col">
                   <Image
                     src={item.image}
-                    className="absolute opacity-0 group-hover:opacity-100 z-[3] w-full h-full rounded-[32px] duration-500 transition-all object-cover"
+                    className="absolute h-full opacity-0 group-hover:opacity-100 z-[3] w-full rounded-[32px] duration-300 transition-all object-cover"
                     width={1400}
                     placeholder="blur"
                     quality={100}
                     height={300}
                     alt={item.title}
                   />
-                  <div className="absolute opacity-0 group-hover:shadow-purple-rgba z-[10] group-hover:bg-[#d400ffca] group-hover:opacity-100 inset-0 w-full h-full rounded-[32px] duration-300 transition-all " />
+                  <div className="absolute group-hover:shadow-purple-rgba z-[10] group-hover:bg-[#D600FF] group-hover:bg-opacity-70  inset-0 w-full h-full rounded-[32px] duration-300 transition-all " />
                   <div className="xl:max-w-[368px] w-full z-20 text-zinc-900 text-2xl sm:text-4xl xl:text-6xl font-extrabold xl:leading-[72px] duration-300 transition-all group-hover:text-[#FFF500]">
                     {item.title}
                   </div>

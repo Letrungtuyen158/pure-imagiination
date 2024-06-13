@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ArrowProps, DotProps } from "react-multi-carousel/lib/types";
 import "./style.css";
-import Container from "@/components/common/container";
 import Image from "next/image";
 import creators from "./creators.constanst";
 import Tiktok from "@/components/common/icon/Tiktok";
