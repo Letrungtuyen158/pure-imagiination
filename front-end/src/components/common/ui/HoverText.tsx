@@ -24,7 +24,7 @@ const HoverText = ({ text, classTextNormal, classTextHover }: HoverTextProps) =>
         <span className={cn("text-white", classTextNormal)}>{text}</span>
       </div>
       <div className={`absolute w-full transition-transform duration-300 ${hovered ? "translate-y-0" : "translate-y-full"}`}>
-        <span className={cn("text-gray-800", classTextHover)}>{text}</span>
+        <span className={cn("text-white", classTextHover)}>{text}</span>
       </div>
     </div>
   );

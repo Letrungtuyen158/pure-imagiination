@@ -1,8 +1,27 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Play from "./icon/Play";
+import useOnClickOutside from "@/hook/useOnClickoutSite";
+
 const VideoThumbnail = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useOnClickOutside(ref, () => {
+    setIsVideoLoaded(false);
+  });
+
+  useEffect(() => {
+    if (isVideoLoaded) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isVideoLoaded]);
 
   const handleThumbnailClick = () => {
     setIsVideoLoaded(true);
@@ -15,7 +34,7 @@ const VideoThumbnail = () => {
   return (
     <div className="relative ">
       <div>
-        <video width={616} height={346} className="object-center rounded-[2rem] " autoPlay muted loop playsInline>
+        <video width={616} height={346} className="object-center rounded-[2rem]" autoPlay muted loop playsInline>
           <source src="/Pure_Imagination.mp4" type="video/mp4" />
           <source src="/Pure_Imagination.webm" type="video/webm" />
         </video>
@@ -25,10 +44,7 @@ const VideoThumbnail = () => {
       </div>
       {isVideoLoaded && (
         <div className="fixed w-full h-screen inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-          <div className="relative h-[800px] w-[1000px] max-w-3xl">
-            <button onClick={handleCloseClick} className="absolute top-0 right-0 bg-white rounded-full w-8 h-8">
-              ✕
-            </button>
+          <div ref={ref} className="relative h-[800px] w-[1000px] max-w-3xl">
             <iframe
               width="700"
               height="615"

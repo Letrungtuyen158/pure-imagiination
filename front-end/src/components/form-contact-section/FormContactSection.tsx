@@ -11,12 +11,12 @@ const FormContactSection = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [channel, setChannel] = useState("");
   const [message, setMessage] = useState("");
-
+  const [name, setName] = useState("");
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     // Kiểm tra tất cả các trường
-    if (!email || !phoneNumber || !channel || !message) {
+    if (!email || !phoneNumber || !channel || !message || !name) {
       toast.error("Please fill out all fields.");
       return;
     }
@@ -26,6 +26,7 @@ const FormContactSection = () => {
       phoneNumber,
       channel,
       message,
+      name,
     };
 
     try {
@@ -37,6 +38,7 @@ const FormContactSection = () => {
       setPhoneNumber("");
       setChannel("");
       setMessage("");
+      setName("");
     } catch (error) {
       console.log("FAILED...", error);
       toast.error("Failed to send the message. Please try again.");
@@ -64,6 +66,27 @@ const FormContactSection = () => {
                   <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="p-3 border-b border-white bg-transparent text-white focus:outline-none" required />
                 </div>
                 <div className="flex flex-col lg:w-full">
+                  <label htmlFor="Name" className="text-slate-300 text-lg font-medium leading-[27px] mb-2">
+                    Name
+                  </label>
+                  <input type="name" id="Name" value={name} onChange={(e) => setName(e.target.value)} className="p-3 border-b border-white bg-transparent text-white focus:outline-none" required />
+                </div>
+              </div>
+              <div className="flex flex-col lg:flex-row lg:gap-[32px] lg:w-full">
+                <div className="flex flex-col lg:w-full">
+                  <label htmlFor="email" className="text-white text-lg font-medium leading-[27px] mb-2">
+                    Your chanel
+                  </label>
+                  <input
+                    type="channel"
+                    id="channel"
+                    value={channel}
+                    onChange={(e) => setChannel(e.target.value)}
+                    className="p-3 border-b border-white bg-transparent text-white focus:outline-none"
+                    required
+                  />
+                </div>
+                <div className="flex flex-col lg:w-full">
                   <label htmlFor="phoneNumber" className="text-slate-300 text-lg font-medium leading-[27px] mb-2">
                     Phone number
                   </label>
@@ -78,19 +101,6 @@ const FormContactSection = () => {
                 </div>
               </div>
               <div className="flex flex-col">
-                <label htmlFor="channel" className="text-slate-300 text-lg font-medium leading-[27px] mb-2">
-                  Your channel
-                </label>
-                <input
-                  type="text"
-                  id="channel"
-                  value={channel}
-                  onChange={(e) => setChannel(e.target.value)}
-                  className="p-3 border-b border-white bg-transparent text-white focus:outline-none"
-                  required
-                />
-              </div>
-              <div className="flex flex-col">
                 <label htmlFor="message" className="text-slate-300 text-lg font-medium leading-[27px] mb-2">
                   How can I help you
                 </label>
@@ -98,7 +108,7 @@ const FormContactSection = () => {
               </div>
             </div>
             <CtaButton classNameContainer="mt-6" type="submit">
-              Get in touch
+              Submit Contact
             </CtaButton>
           </div>
         </form>

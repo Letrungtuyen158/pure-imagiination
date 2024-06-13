@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Container from "../common/container";
 import Logo from "../common/icon/Logo";
@@ -5,6 +6,20 @@ import HoverText from "../common/ui/HoverText";
 import Link from "next/link";
 
 const Header = () => {
+  const handleLinkClick = (e: any) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+    // Đóng menu bằng cách bỏ chọn checkbox
+    const checkbox = document.getElementById("toggle_nav") as HTMLInputElement;
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+  };
+
   return (
     <header>
       <div
@@ -36,24 +51,24 @@ const Header = () => {
                         dark:shadow-none dark:bg-gray-800 border-gray-700  lg:!bg-transparent ">
               <div className="text-gray-600 lg:text-[18px] lg:font-normal lg:text-white lg:pr-4 lg:max-w-full w-full lg:pt-0">
                 <div className="w-full tracking-wide font-medium lg:text-sm flex-col flex items-center justify-end lg:flex-row gap-6 lg:gap-0">
-                  <div className=" flex flex-col items-center gap-4 lg:gap-0 lg:flex-row justify-end w-full">
+                  <div className="flex flex-col items-center gap-4 lg:gap-0 lg:flex-row justify-end w-full">
                     <div className="w-[100px] leading-[23px]">
-                      <Link href={"#about"}>
+                      <Link href="#about" onClick={handleLinkClick}>
                         <HoverText text="ABOUT PI" />
                       </Link>
                     </div>
                     <div className="w-[150px] leading-[23px]">
-                      <Link href={"#our-dreamers"}>
+                      <Link href="#our-dreamers" onClick={handleLinkClick}>
                         <HoverText text="OUR DREAMERS" />
                       </Link>
                     </div>
                     <div className="w-[130px] leading-[23px]">
-                      <Link href={"#our-support"}>
+                      <Link href="#our-support" onClick={handleLinkClick}>
                         <HoverText text="OUR SUPPORT" />
                       </Link>
                     </div>
                     <div className="w-[110px] leading-[23px]">
-                      <Link href={"#contact-us"}>
+                      <Link href="#contact-us" onClick={handleLinkClick}>
                         <HoverText text="CONTACT US" />
                       </Link>
                     </div>
@@ -64,8 +79,10 @@ const Header = () => {
                       backdropFilter: "blur(10px)",
                       padding: "8px 8px 8px 16px",
                     }}>
-                    <Link href={"#contact-us"}>START YOUR DREAM</Link>
-                    <div className=" relative w-[26px] h-[26px]  bg-[#FF3EA5] rounded-[100px]">
+                    <Link href="#contact-us" onClick={handleLinkClick}>
+                      START YOUR DREAM
+                    </Link>
+                    <div className="relative w-[26px] h-[26px] bg-[#FF3EA5] rounded-[100px]">
                       <svg
                         width="12"
                         height="12"
@@ -88,30 +105,6 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* <ul className=" tracking-wide font-medium lg:text-sm flex-col flex items-center lg:flex-row gap-6 lg:gap-0">
-                  <div className="w-fulll">
-                    <a href="#features" className="block md:px-4 w-full text-white transition hover:text-primary">
-                      <HoverText text="ABOUT PI" />
-                    </a>
-                  </div>
-                  <li>
-                    <a href="#solution" className="block md:px-4  text-white transition hover:text-primary">
-                      <span>OUR DREAMERS</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#testimonials" className="block md:px-4  text-white transition hover:text-primary">
-                      <span>OUR SUPPORT</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#blog" className="block md:px-4 text-white transition hover:text-primary">
-                      <span>CONTACT US</span>
-                    </a>
-                  </li>
-            
-                </ul> */}
               </div>
             </div>
           </div>
