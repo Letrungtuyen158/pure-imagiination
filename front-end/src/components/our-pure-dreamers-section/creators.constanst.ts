@@ -8,11 +8,19 @@ type Creator = {
   position: string;
   introduce: string;
   avatar: StaticImageData;
+  href_fb: string;
+  href_ins: string;
+  href_tik: string;
+  href_ytb: string;
 };
 
 export const creators: Creator[] = [
   {
     name: "Ely It Clean",
+    href_fb: "https://www.facebook.com/elyitclean",
+    href_ins: "https://www.instagram.com/elynguyenx",
+    href_tik: "https://www.tiktok.com/@elyitclean",
+    href_ytb: "https://www.youtube.com/@elyitclean",
     avatar: EllyAvatar,
     position: "Food Vlogger",
     introduce:
@@ -20,6 +28,10 @@ export const creators: Creator[] = [
   },
   {
     name: "Khum Can Co",
+    href_fb: "https://www.facebook.com/antikhumcanco",
+    href_ins: "https://www.instagram.com/hng_oanh/",
+    href_tik: "https://www.tiktok.com/@khumcanco",
+    href_ytb: "https://www.youtube.com/@khumcanco",
     avatar: KhumCanCoAvatar,
     position: "Lifestyle Vlogger",
     introduce:
@@ -27,6 +39,10 @@ export const creators: Creator[] = [
   },
   {
     name: "Chi Ka",
+    href_fb: "https://www.facebook.com/profile.php?id=100089804057098",
+    href_ins: "https://www.instagram.com/chikakakay/",
+    href_tik: "https://www.tiktok.com/@chikakakay",
+    href_ytb: "https://www.youtube.com/@chikakakay",
     avatar: ChikaAvatar,
     position: "Self-Growth Creator",
     introduce:

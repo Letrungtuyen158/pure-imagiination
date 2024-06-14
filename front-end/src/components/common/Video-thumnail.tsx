@@ -1,27 +1,16 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import Play from "./icon/Play";
 import useOnClickOutside from "@/hook/useOnClickoutSite";
-
+import useDeviceDetect from "@/utils/isMobiClient";
 const VideoThumbnail = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  const ref = useRef<HTMLDivElement | null>(null);
+  const isMobile = useDeviceDetect();
 
+  const ref = useRef<HTMLDivElement | null>(null);
   useOnClickOutside(ref, () => {
     setIsVideoLoaded(false);
   });
-
-  useEffect(() => {
-    if (isVideoLoaded) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isVideoLoaded]);
 
   const handleThumbnailClick = () => {
     setIsVideoLoaded(true);
@@ -34,7 +23,7 @@ const VideoThumbnail = () => {
   return (
     <div className="relative ">
       <div>
-        <video width={616} height={346} className="object-center rounded-[2rem]" autoPlay muted loop playsInline>
+        <video width={616} height={346} className="object-center rounded-[2rem] " autoPlay muted loop playsInline>
           <source src="/Pure_Imagination.mp4" type="video/mp4" />
           <source src="/Pure_Imagination.webm" type="video/webm" />
         </video>
@@ -44,10 +33,10 @@ const VideoThumbnail = () => {
       </div>
       {isVideoLoaded && (
         <div className="fixed w-full h-screen inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-          <div ref={ref} className="relative h-[800px] w-[1000px] max-w-3xl">
+          <div ref={ref} className="relative max-w-3xl">
             <iframe
-              width="700"
-              height="615"
+              width={isMobile ? 430 : 700}
+              height={isMobile ? 400 : 615}
               src="https://www.youtube.com/embed/iJYp5l2GNzA?si=qa32JsjcV-cfZ8ID"
               title="YouTube video player"
               frameBorder="0"

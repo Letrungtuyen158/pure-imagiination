@@ -52,8 +52,8 @@ export default function CarouselSlide() {
       </div>
       <div className="max-w-[1920px] mx-auto px-[35px]  lg:px-[100px]  xxl:px-[20px]">
         <div className="mt-28 mb-4 text-center">
-          <span className="text-black-base text-4xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">OUR </span>
-          <span className="text-primary-pink text-4xl sm:text-6xl  font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
+          <span className="text-black-base text-6xl  font-extrabold tracking-wide leading-[72px]">OUR </span>
+          <span className="text-primary-pink text-6xl  font-extrabold tracking-wide leading-[72px]">PURE DREAMERS</span>
         </div>
         <Carousel
           responsive={responsive}
@@ -87,7 +87,7 @@ export default function CarouselSlide() {
                     <p className="text-slate-500 text-base sm:text-lg font-normal leading-[24px] tracking-wide xl:leading-[28.80px]">{creator.introduce}</p>
                   </div>
                   <div className="flex justify-start items-center gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-100 rounded-full relative">
+                    <a href={creator.href_fb} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-100 rounded-full relative">
                       <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clipPath="url(#clip0_1_253)">
@@ -103,22 +103,22 @@ export default function CarouselSlide() {
                           </defs>
                         </svg>
                       </span>
-                    </div>
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
+                    </a>
+                    <a href={creator.href_ins} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
                       <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
                         <Instagram />
                       </span>
-                    </div>
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
+                    </a>
+                    <a href={creator.href_tik} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
                       <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
                         <Tiktok />
                       </span>
-                    </div>
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
+                    </a>
+                    <a href={creator.href_ytb} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
                       <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
                         <Youtube />
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

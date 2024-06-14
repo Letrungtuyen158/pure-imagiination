@@ -16,14 +16,14 @@ export default function CtaSection() {
           <div className="space-y-3 lg:w-[50rem]">
             <div className="">
               <span className="text-primary-pink text-6xl font-extrabold  leading-[72px]">WHO </span>
-              <span className="text-black-base text-6xl font-extrabold  leading-[72px]">WE ARE?</span>
+              <span className="text-black-base text-6xl font-extrabold  leading-[72px]">ARE WE?</span>
             </div>
             <div className="text-black-base text-xl font-semibold  leading-[30px]">{CTA_DATA.title}</div>
             <div className="max-w-[737px] py-3">
               <p className="text-gray-700 text-base font-normal  leading-relaxed">
                 {CTA_DATA.description}
                 <br />
-                <span className="text-2xl font-bold  leading-[38.40px] from-[#D600FF] from-60% to-[#e53fe5] bg-gradient-to-r bg-clip-text text-transparent">{CTA_DATA.callingText}</span>
+                <span className="text-2xl font-bold  leading-[38.40px] text-black bg-gradient-to-r bg-clip-text text-transparent">{CTA_DATA.callingText}</span>
               </p>
             </div>
             <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 sm:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">

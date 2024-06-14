@@ -4,7 +4,7 @@ const useDeviceDetect = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mobileCheck = window.matchMedia("(max-width: 1279px)");
+    const mobileCheck = window.matchMedia("(max-width: 800px)");
     setIsMobile(mobileCheck.matches);
 
     const handleResize = () => {
@@ -22,4 +22,3 @@ const useDeviceDetect = () => {
 };
 
 export default useDeviceDetect;
-

@@ -36,10 +36,18 @@ const Footer = () => {
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"FOLLOW US"} />
             </h2>
             <div className="flex justify-center md:justify-start space-x-4">
-              <Facebook />
-              <Instagram />
-              <Tiktok />
-              <Discord />
+              <a href="https://www.facebook.com/pureimagination.network" target="_blank">
+                <Facebook />
+              </a>
+              <a href="https://www.instagram.com/pureimagination.network" target="_blank">
+                <Instagram />
+              </a>
+              <a href="https://www.tiktok.com/@pureimagination.network" target="_blank">
+                <Tiktok />
+              </a>
+              <a href="https://discord.gg/hac3YwhGds" target="_blank">
+                <Discord />
+              </a>
               <a href="#" className="text-white">
                 <i className="fab fa-tiktok"></i>
               </a>
@@ -53,7 +61,7 @@ const Footer = () => {
               <HoverText text={"PURE IMAGINATION"} />
             </h2>
             <p>Headquarter: Pure Imagination Studio,</p>
-            <p>395 Lac Long Quan Street, Nghia Do, Cau Giay District, HN City.</p>
+            <p>395 Lac Long Quan Street, Nghia Do, Cau Giay District, Hanoi. tohoi.</p>
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center md:text-left">
