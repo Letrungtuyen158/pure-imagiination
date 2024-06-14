@@ -16,16 +16,12 @@ const FormContactSection = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
     if (isSubmitting) return;
-
     if (!email || !phoneNumber || !channel || !message || !name) {
       toast.error("Please fill out all fields.");
       return;
     }
-
     setIsSubmitting(true);
-
     const templateParams = {
       email,
       phone: phoneNumber,
@@ -35,7 +31,7 @@ const FormContactSection = () => {
     };
 
     try {
-      const response = await emailjs.send("service_ukgbwj2", "template_4fvuv3j", templateParams, "SVRYTduJGycvBgotO");
+      await emailjs.send("service_ukgbwj2", "template_4fvuv3j", templateParams, "SVRYTduJGycvBgotO");
       setEmail("");
       setPhoneNumber("");
       setChannel("");
