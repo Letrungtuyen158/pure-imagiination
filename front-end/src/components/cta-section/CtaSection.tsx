@@ -23,7 +23,7 @@ export default function CtaSection() {
               <p className="text-gray-700 text-base font-normal  leading-relaxed">
                 {CTA_DATA.description}
                 <br />
-                <span className="text-2xl font-bold  leading-[38.40px] text-black bg-gradient-to-r bg-clip-text text-transparent">{CTA_DATA.callingText}</span>
+                <span className="text-2xl font-bold leading-[38.40px] text-black bg-gradient-to-r bg-clip-text">{CTA_DATA.callingText}</span>
               </p>
             </div>
             <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 sm:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
