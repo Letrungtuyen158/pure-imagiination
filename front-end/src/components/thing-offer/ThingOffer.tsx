@@ -5,17 +5,17 @@ import { THING_OFFER } from "./thing-offer.constanst";
 
 export default function ThingOffer() {
   return (
-    <div id="our-support" className="relative py-32 pb-[10.75rem] bg-rose-50 overflow-hidden">
+    <div id="our-support" className="relative py-10 sm:py-32 pb-12 sm:pb-[10.75rem] bg-rose-50 overflow-hidden">
       <Container>
-        <div className="text-center mb-[4.75rem]">
-          <span className="text-black-base text-6xl font-extrabold leading-[72px]">THIS IS THINGS </span>
-          <span className="text-primary-pink text-6xl font-extrabold leading-[72px]">WE OFFER</span>
+        <div className="text-center mb-8 sm:mb-[4.75rem]">
+          <span className="text-black-base text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">THIS IS THINGS </span>
+          <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">WE OFFER</span>
         </div>
         <div className="space-y-[3.125rem]">
           {THING_OFFER.map((item, idx) => {
             return (
               <div key={idx + "THING_OFFER"} className="flex flex-col justify-center group duration-300 relative transition-all">
-                <div className="max-w-[1444px] mx-auto min-h-[300px] px-10 sm:px-[60px] bg-white rounded-[32px] relative border border-gray-300 justify-center items-center gap-6 inline-flex duration-500 transition-all  group-hover:border-none bg-transparent xl:gap-[200px] sm:gap-10 lg:flex-row flex-col">
+                <div className="max-w-[1444px] mx-auto py-4 sm:py-0 sm:min-h-[300px] px-10 sm:px-[60px] bg-white rounded-[32px] relative border border-gray-300 justify-center items-center gap-3 inline-flex duration-500 transition-all  group-hover:border-none bg-transparent xl:gap-[200px] lg:flex-row flex-col">
                   <Image
                     src={item.image}
                     className="absolute h-full opacity-0 group-hover:opacity-100 z-[3] w-full rounded-[32px] duration-300 transition-all object-cover"

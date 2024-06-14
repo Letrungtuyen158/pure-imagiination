@@ -10,12 +10,12 @@ export default function ReasonSection() {
       <div className="max-w-[1920px] sm:min-h-[933px] pt-[7rem] sm:pb-[8.5rem] flex flex-col items-center relative">
         <div className="flex-col justify-start items-center gap-6 inline-flex sm:mb-[5.625rem]">
           <div className="max-w-[1444px] text-center">
-            <span className="text-primary-pink text-6xl font-extrabold leading-[78px]">MORE REASONS </span>
-            <span className="text-zinc-900 text-6xl font-extrabold leading-[78px]">TO JOIN US</span>
+            <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">MORE REASONS </span>
+            <span className="text-zinc-900 text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">TO JOIN US</span>
           </div>
-          <div className="max-w-[1444px] text-center text-gray-700 text-lg font-medium leading-[28.80px]">
+          <div className="max-w-[1444px] text-center text-gray-700 sm:text-lg font-medium sm:leading-[28.80px]">
             As a rising star in the creator network space, we&apos;ve quickly attracted top talent. <br />
-            We&apos;re seeking passionate individuals ready to create exceptional content. In return, we offer a supportive community and the tools to help you thrive
+            We&apos;re seeking passionate individuals ready to create exceptional content. In return, we offer a supportive community and the tools to help you thrive.
           </div>
         </div>
         <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">

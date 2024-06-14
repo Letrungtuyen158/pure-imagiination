@@ -27,7 +27,7 @@ export default function Home() {
       <SecondCTA />
       <SloganAnimation />
       <ReasonSection />
-      <div className="sm:hidden mt-12 pb-[7rem]">
+      <div className="sm:hidden mt-10 pb-12">
         <ReasonSlide />
       </div>
       <FormContactSection />

@@ -31,7 +31,7 @@ export const THING_OFFER: ThingOfferType[] = [
   {
     title: "PERSONAL BRANDING",
     description:
-      "Building a meaningful personal brand on TikTok takes more than just posting videos. It requires strategy, creativity, and a deep understanding of your audience. Partner with us and let our experienced team guide you in creating a truly influential presence in your community",
+      "Building a meaningful personal brand on TikTok takes more than just posting videos. It requires strategy, creativity, and a deep understanding of your audience. Partner with us and let our experienced team guide you in creating a truly influential presence in your community.",
     image: personalBranding,
   },
 ];

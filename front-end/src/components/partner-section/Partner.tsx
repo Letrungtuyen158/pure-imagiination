@@ -5,10 +5,10 @@ import Marquee from "react-fast-marquee";
 
 export default function Partner() {
   return (
-    <div className="w-full h-[618px] overflow-hidden py-[6.25rem] relative bg-[#FF3EA5]">
+    <div className="w-full h-[618px] overflow-hidden sm:py-[6.25rem] py-12 relative bg-[#FF3EA5]">
       <div className="overflow-hidden">
-        <div className="text-center text-white text-[40px] lg:text-5xl font-bold tracking-wide leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
-        <div className="xl:py-[7.625rem] flex flex-col overflow-hidden xl:mt-0 sm:mt-[3.75rem] sm:gap-[3.75rem] mt-6 gap-6">
+        <div className="text-center text-white text-3xl sm:text-5xl font-bold tracking-wide leading-normal sm:leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
+        <div className="xl:py-[7.625rem] flex flex-col overflow-hidden xl:mt-0 mt-[3.75rem] gap-[3.75rem]">
           <Marquee pauseOnHover autoFill>
             <div className="flex items-center gap-16 justify-center">
               {PARTNER_ICONS.map((item, idx) => (
