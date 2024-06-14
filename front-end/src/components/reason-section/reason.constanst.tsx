@@ -60,7 +60,7 @@ export const REASON_DATA: ReasonType[] = [
     ),
   },
   {
-    title: "Work effciency",
+    title: "efficiency",
     description: "Save time, work smarter and achieve more.",
     icon: (
       <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">

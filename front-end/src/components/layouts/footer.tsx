@@ -61,7 +61,7 @@ const Footer = () => {
               <HoverText text={"PURE IMAGINATION"} />
             </h2>
             <p>Headquarter: Pure Imagination Studio,</p>
-            <p>395 Lac Long Quan Street, Nghia Do, Cau Giay District, Hanoi. tohoi.</p>
+            <p>395 Lac Long Quan Street, Nghia Do, Cau Giay District, Hanoi.</p>
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center md:text-left">

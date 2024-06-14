@@ -9,6 +9,7 @@ import creators from "./creators.constanst";
 import Tiktok from "@/components/common/icon/Tiktok";
 import Instagram from "@/components/common/icon/Instagram";
 import Youtube from "@/components/common/icon/Youtube";
+import FacebookOur from "../common/icon/FacebookOur";
 const CustomLeftArrow = ({ onClick }: ArrowProps) => (
   <button onClick={onClick} className="custom-left-arrow hidden sm:block">
     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,36 +88,24 @@ export default function CarouselSlide() {
                     <p className="text-slate-500 text-base sm:text-lg font-normal leading-[24px] tracking-wide xl:leading-[28.80px]">{creator.introduce}</p>
                   </div>
                   <div className="flex justify-start items-center gap-4">
-                    <a href={creator.href_fb} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-100 rounded-full relative">
+                    <a href={creator.href_fb} target="_blank" className="group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100 relative">
                       <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clipPath="url(#clip0_1_253)">
-                            <path
-                              d="M13.8587 24V13.0533H17.5316L18.0826 8.78588H13.8587V6.06176C13.8587 4.82664 14.2003 3.98492 15.9734 3.98492L18.2313 3.98399V0.167076C17.8408 0.116334 16.5005 0 14.9405 0C11.683 0 9.45282 1.98836 9.45282 5.63912V8.78588H5.7688V13.0533H9.45282V24H13.8587Z"
-                              fill="#E63895"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_253">
-                              <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
+                        <FacebookOur className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
                       </span>
                     </a>
-                    <a href={creator.href_ins} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
-                      <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
-                        <Instagram />
+                    <a href={creator.href_ins} target="_blank" className="group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100  relative">
+                      <span className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2">
+                        <Instagram className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
                       </span>
                     </a>
-                    <a href={creator.href_tik} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
-                      <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
-                        <Tiktok />
+                    <a href={creator.href_tik} target="_blank" className=" group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100  relative">
+                      <span className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2">
+                        <Tiktok className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
                       </span>
                     </a>
-                    <a href={creator.href_ytb} target="_blank" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 relative">
-                      <span className="absolute left-1/2 top-1/2 *:*:fill-[#15191E] -translate-x-1/2 -translate-y-1/2">
-                        <Youtube />
+                    <a href={creator.href_ytb} target="_blank" className="group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100  relative">
+                      <span className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2">
+                        <Youtube className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
                       </span>
                     </a>
                   </div>
