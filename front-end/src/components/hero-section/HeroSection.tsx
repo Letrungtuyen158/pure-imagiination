@@ -6,7 +6,7 @@ import TextAnimation from "./TextAnimation";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-gradient-to-t from-primary-pink from-0% to-30% to-transparent  h-[400px] lg:h-[670px] " id="home">
+    <div className="relative bg-gradient-to-t from-primary-pink from-0% to-30% to-transparent  h-[480px] lg:h-[670px] " id="home">
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <Image src={banner} fill style={{ objectFit: "cover" }} placeholder="blur" quality={100} alt="Background Image" priority className="absolute inset-0" />
       </div>
@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="relative pt-32 lg:pt-36 ml-auto ">
           <TextAnimation />
           <button type="button" className="flex p-2 text-center group mx-auto items-center gap-2 rounded-full bg-opacity-30 backdrop-blur-md">
-            <p className="text-white text-center  text-2xl font-bold leading-normal capitalize">START YOUR DREAM</p>
+            <p className="text-white text-center text-xl lg:text-2xl font-bold leading-normal capitalize">START YOUR DREAM</p>
             <div className="w-9 h-9 relative">
               <div className="w-9 h-9 left-0 top-0 absolute bg-[#FF3EA5] rounded-[100px]" />
               <div className="w-3 h-3 left-[12px] top-[12px] absolute justify-center items-center inline-flex">
