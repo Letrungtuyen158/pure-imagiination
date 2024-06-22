@@ -15,10 +15,8 @@ const HeroSection = () => {
         <div className="relative pt-32 lg:pt-36 ml-auto ">
           <TextAnimation />
           <CtaButton
-            fill="#fff"
-            svgClass="bg-[#FF3EA5]"
             classNameContainer="flex px-2 py-1 text-center group mx-auto items-center gap-2 bg-transparent border-yellow-400 hover:bg-sky-400 hover:border-sky-400 border-[3px]  rounded-full"
-            className="text-base leading-normal bg-[FF3EA5] tracking-wide">
+            className="text-base leading-normal  tracking-wide">
             START YOUR DREAM
           </CtaButton>
         </div>
