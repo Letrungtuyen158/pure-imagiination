@@ -74,12 +74,11 @@ const Header = () => {
                     </div>
                   </div>
                   <div
-                    className="flex group min-w-[220px] cursor-pointer items-center h-[36px] rounded-full gap-[8px] text-white  bg-gray-300 bg-opacity-30"
+                    className="flex group min-w-[225px] cursor-pointer items-center h-[36px]  border-yellow-400 hover:bg-sky-400 hover:border-sky-400 border-2  rounded-full gap-[8px] text-white "
                     style={{
-                      backdropFilter: "blur(10px)",
                       padding: "8px 8px 8px 16px",
                     }}>
-                    <Link href="#contact-us" onClick={handleLinkClick}>
+                    <Link href="#contact-us" className="font-extrabold" onClick={handleLinkClick}>
                       START YOUR DREAM
                     </Link>
                     <div className="relative w-[26px] h-[26px] bg-[#FF3EA5] rounded-[100px]">

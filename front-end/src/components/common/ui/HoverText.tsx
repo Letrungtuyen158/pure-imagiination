@@ -21,10 +21,10 @@ const HoverText = ({ text, classTextNormal, classTextHover }: HoverTextProps) =>
   return (
     <div className="relative w-full h-6 overflow-hidden cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div className={`absolute w-full transition-transform duration-300 ${hovered ? "-translate-y-full" : "translate-y-0"}`}>
-        <span className={cn("text-white", classTextNormal)}>{text}</span>
+        <span className={cn("text-white font-extrabold", classTextNormal)}>{text}</span>
       </div>
       <div className={`absolute w-full transition-transform duration-300 ${hovered ? "translate-y-0" : "translate-y-full"}`}>
-        <span className={cn("text-white", classTextHover)}>{text}</span>
+        <span className={cn("text-white font-extrabold", classTextHover)}>{text}</span>
       </div>
     </div>
   );

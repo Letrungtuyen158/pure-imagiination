@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#FF3EA5]  text-white pt-10 pb-20">
       <Container>
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-8 text-center  md:text-left">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-14 lg:gap-8 text-center  md:text-left">
           <div>
             <h2 className="flex cursor-default min-w-[135.555px] h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"CONTACT US"} />
@@ -48,12 +48,6 @@ const Footer = () => {
               <a href="https://discord.gg/hac3YwhGds" target="_blank">
                 <Discord />
               </a>
-              <a href="#" className="text-white">
-                <i className="fab fa-tiktok"></i>
-              </a>
-              <a href="#" className="text-white">
-                <i className="fab fa-discord"></i>
-              </a>
             </div>
           </div>
           <div className="text-white text-center md:text-left">
@@ -74,14 +68,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container md:space-y-24  mx-auto text-center mt-6 md:mt-16   xl:mt-[50px]">
+        {}
+        <div className="container hidden lg:block md:space-y-24  mx-auto text-center mt-6 md:mt-16   xl:mt-[50px]">
           <p className="flex flex-col sm:flex-row justify-center  space-x-[20px]">
-            <span className=" cursor-default text-center text-5xl sm:text-[96px] xl:text-[197.651px] font-bold custom-text-stroke  hover:custom-text-stroke-hover">DREAM</span>
-            <span className="cursor-default text-[#FFF] text-center font-montserrat text-5xl sm:text-[96px] xl:text-[197.651px] font-bold hover:text-purple-300 transition duration-500">BIG</span>
+            <span className=" cursor-default font-[monospace] text-center text-5xl sm:text-[96px] xl:text-[197.651px] font-black custom-text-stroke  hover:custom-text-stroke-hover">DREAM</span>
+            <span className="cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] xl:text-[197.651px] font-bold font-[monospace] hover:text-purple-300 transition duration-500">BIG</span>
           </p>
           <p className="flex flex-col sm:flex-row justify-center space-x-[20px] xl:space-x-[20px] lg:!mt-[30px]">
-            <span className="cursor-default text-[#FFF] text-center font-montserrat text-5xl sm:text-[96px] xl:text-[164.945px] font-bold hover:text-purple-300 transition duration-500">EARN</span>
-            <span className="cursor-default text-center font-montserrat text-5xl sm:text-[96px] xl:text-[164.945px] font-bold custom-text-stroke2 hover:custom-text-stroke2-hover">BIGGER</span>
+            <span className="cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] xl:text-[164.945px] font-black font-[monospace] hover:text-purple-300 transition duration-500">EARN</span>
+            <span className="cursor-default text-center  text-5xl sm:text-[96px] xl:text-[164.945px]  font-black font-[monospace] custom-text-stroke2 hover:custom-text-stroke2-hover">BIGGER</span>
           </p>
         </div>
       </Container>

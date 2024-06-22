@@ -13,7 +13,7 @@ export default function ReasonSection() {
             <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">MORE REASONS </span>
             <span className="text-zinc-900 text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">TO JOIN US</span>
           </div>
-          <div className="max-w-[1444px] text-center text-gray-700 sm:text-lg font-medium sm:leading-[28.80px]">
+          <div className="max-w-[1444px] text-center text-black-base sm:text-lg font-semibold sm:leading-[28.80px]">
             As a rising star in the creator network space, we&apos;ve quickly attracted top talent. <br />
             We&apos;re seeking passionate individuals ready to create exceptional content. In return, we offer a supportive community and the tools to help you thrive.
           </div>
@@ -46,7 +46,7 @@ export default function ReasonSection() {
                     <div className="min-w-[144.54px] w-full text-center lg:text-left min-h-6 text-black-base transition-all duration-300 group-hover:text-primary-pink text-xl font-extrabold uppercase">
                       <p>{item.title}</p>
                     </div>
-                    <div className="max-w-[268.23px] w-full text-center lg:text-left min-h-[51.20px] text-slate-500 transition-all duration-300 group-hover:text-pink-950 text-base font-normal leading-relaxed">
+                    <div className="max-w-[268.23px] w-full text-center lg:text-left min-h-[51.20px] text-black-base transition-all duration-300 group-hover:text-pink-950 text-base font-normal leading-relaxed">
                       <p>{item.description}</p>
                     </div>
                   </div>

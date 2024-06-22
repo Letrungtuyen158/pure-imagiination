@@ -18,9 +18,9 @@ export default function CtaSection() {
               <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">WHO </span>
               <span className="text-black-base text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">ARE WE?</span>
             </div>
-            <div className="text-black-base text-xl font-semibold  leading-[30px]">{CTA_DATA.title}</div>
+            <div className="text-black-base text-xl font-extrabold  leading-[25px]">{CTA_DATA.title}</div>
             <div className="max-w-[737px] py-3">
-              <p className="text-gray-700 text-base font-normal  leading-relaxed">
+              <p className="text-black-base text-base font-semibold  leading-relaxed">
                 {CTA_DATA.description}
                 <br />
                 <span className="text-2xl font-bold leading-[38.40px] text-black bg-gradient-to-r bg-clip-text">{CTA_DATA.callingText}</span>
@@ -30,26 +30,26 @@ export default function CtaSection() {
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[0]}</div>
+                  <div className=" text-black-base text-lg font-bold  leading-normal tracking-wide">{CTA_DATA.positions[0]}</div>
                 </div>
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[1]}</div>
+                  <div className=" text-black-base text-lg font-bold   leading-normal tracking-wide">{CTA_DATA.positions[1]}</div>
                 </div>
               </div>
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[2]}</div>
+                  <div className=" text-black-base text-lg font-bold   leading-normal tracking-wide">{CTA_DATA.positions[2]}</div>
                 </div>
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
-                  <div className=" text-black-base text-lg font-medium  leading-normal tracking-wide">{CTA_DATA.positions[3]}</div>
+                  <div className=" text-black-base text-lg font-bold   leading-normal tracking-wide">{CTA_DATA.positions[3]}</div>
                 </div>
               </div>
             </div>
-            <div className="pt-7">
-              <CtaButton className="text-base leading-normal tracking-wide">{CTA_DATA.buttonLabel}</CtaButton>
+            <div className="pt-7 pb-4 mb-11">
+              <CtaButton className="text-base leading-normal  tracking-wide">{CTA_DATA.buttonLabel}</CtaButton>
             </div>
           </div>
         </div>

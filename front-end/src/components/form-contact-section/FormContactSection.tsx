@@ -46,14 +46,14 @@ const FormContactSection = () => {
   };
 
   return (
-    <div id="contact-us" className="bg-[url('/Contact.png')] bg-cover bg-no-repeat w-full h-[603px] lg:h-[866px]">
+    <div id="contact-us" className="bg-[url('/Contact.png')] bg-cover bg-no-repeat w-full h-[700px] lg:h-[866px]">
       <Container>
-        <form onSubmit={handleSubmit} className="p-8 rounded-lg shadow-lg flex flex-col justify-center lg:justify-end lg:items-end gap-8">
+        <form onSubmit={handleSubmit} className=" pt-8 lg:p-8 rounded-lg shadow-lg flex flex-col justify-center lg:justify-end lg:items-end gap-8">
           <div className="lg:w-[706px] lg:mt-[100px] h-[400px] lg:h-[606px] bg-opacity-75">
             <div className="self-stretch lg:mb-[32px]">
               <span className="text-white text-2xl lg:text-5xl font-extrabold lg:leading-[62.40px]">
                 READY TO <br />
-                USE YOUR
+                USE YOUR{" "}
               </span>
               <span className="text-fuchsia-600 text-2xl lg:text-5xl font-extrabold lg:leading-[62.40px] gradient-text">IMAGINATION?</span>
             </div>
