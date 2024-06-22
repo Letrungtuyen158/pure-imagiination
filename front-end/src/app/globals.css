@@ -9,15 +9,10 @@ html {
 
 body {
   margin: 0;
+  color: white;
 }
 .svg-white path {
   fill: white !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  .svg-white path {
-    fill: white !important;
-  }
 }
 
 .custom-text-stroke {

@@ -8,7 +8,7 @@ const TextAnimation = () => {
       style={{
         textShadow: "8px 8px 16px rgba(19, 30, 47, 0.20)",
       }}
-      className=" text-center mx-auto text-white text-[30px] mb-6 lg:text-[70px]  xl:text-[90px] font-black leading-[120%] ">
+      className=" text-center mx-auto text-white text-[26px] mb-6 lg:text-[70px]  xl:text-[90px] font-black leading-[120%] ">
       <p>IT ALL STARTS</p>
       <div className="text-[#FFF500]">
         WITH <DreamAnimation />

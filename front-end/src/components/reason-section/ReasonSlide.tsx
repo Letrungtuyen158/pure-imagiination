@@ -81,7 +81,7 @@ export default function ReasonSlide() {
                   <div className="min-w-[144.54px] w-full text-center lg:text-left min-h-6 text-black-base transition-all duration-300 group-hover:text-primary-pink text-xl font-extrabold uppercase">
                     <p>{item.title}</p>
                   </div>
-                  <div className="max-w-[268.23px] w-full text-center lg:text-left min-h-[51.20px] text-slate-500 transition-all duration-300 group-hover:text-pink-950 text-base font-normal leading-relaxed">
+                  <div className=" w-full text-center lg:text-left min-h-[51.20px] text-slate-500 transition-all duration-300 group-hover:text-pink-950 font-medium text-[14px] lg:font-base leading-relaxed">
                     <p>{item.description}</p>
                   </div>
                 </div>
