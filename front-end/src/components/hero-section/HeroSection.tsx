@@ -3,7 +3,7 @@ import Image from "next/image";
 import banner from "../../../public/banner.png";
 import Container from "../common/container";
 import TextAnimation from "./TextAnimation";
-import CtaButton from "../common/cta-button";
+import arrow from "./arrow2222.png";
 
 const HeroSection = () => {
   return (
@@ -14,11 +14,18 @@ const HeroSection = () => {
       <Container>
         <div className="relative pt-32 lg:pt-36 ml-auto ">
           <TextAnimation />
-          <CtaButton
-            classNameContainer="flex px-2 py-1 text-center group mx-auto items-center gap-2 bg-primary-pink  border-yellow-400 hover:bg-sky-400 hover:border-sky-400 border-[3px]  rounded-full"
-            className="text-base leading-normal tracking-wide">
-            START YOUR DREAM
-          </CtaButton>
+
+          <button
+            type="button"
+            className="pl-4 group pr-2 bg-transparent group justify-start items-center gap-2  flex px-2 py-1 text-center group mx-auto   border-yellow-400 hover:bg-sky-400 hover:border-sky-400 border-[3px]  rounded-full">
+            <div className="text-center text-white capitalize sm:!text-xl !font-medium  text-base leading-normal tracking-wide"> START YOUR DREAM</div>
+            <div className="w-9 h-9 relative">
+              <div className="w-9 h-9 left-0 top-0 absolute  bg-primary-pink  rounded-[100px]" />
+              <div className="w-3 h-3 left-[12px] top-[12px]  justify-center items-center inline-flex">
+                <Image src={arrow} alt={"sads"} className="absolute group-hover:rotate-[135deg] duration-300 top-[10px] w-[14px] h-[14px]" />
+              </div>
+            </div>
+          </button>
         </div>
       </Container>
     </div>
