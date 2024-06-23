@@ -1,11 +1,15 @@
+"use client";
 import Container from "@/components/common/container";
 import Image from "next/image";
 import React from "react";
 import Banner from "/public/get-in-touch.png";
+import BannerMobi from "./mobi.png";
 import CtaButton from "@/components/common/cta-button";
-import ReasonSlide from "@/components/reason-section/ReasonSlide";
+import useDeviceDetect from "@/utils/isMobiClient";
 
 export default function SecondCTA() {
+  const isMobile = useDeviceDetect();
+
   return (
     <div className=" pt-[3rem] lg:py-32 pb-[3.75rem] lg:pb-[10.75rem] bg-white overflow-hidden">
       <Container>
@@ -14,7 +18,7 @@ export default function SecondCTA() {
             <div className="max-w-[1444px] w-full mx-auto h-[300px] relative">
               <div className="w-full min-h-[300px] lg:min-h-[300px] md:max-h-[300px] absolute inset-0 bg-gradient-to-r rounded-[32px] from-black-base from-0% to-80%" />
               <Image
-                src={Banner}
+                src={isMobile ? BannerMobi : Banner}
                 className="rounded-[32px] min-h-[300px] lg:min-h-[300px] md:h-[300px] object-cover bg-gradient-to-r from-black to-black"
                 width={1444}
                 placeholder="blur"
