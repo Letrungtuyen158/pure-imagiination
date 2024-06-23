@@ -11,9 +11,9 @@ export default function CtaSection() {
   return (
     <div id="about" className="w-full bg-[#FFECF6]">
       <Container>
-        <div className="lg:py-40 py-0 xl:flex-row flex-col mx-auto flex gap-10 xl:gap-[5.75rem] items-center justify-center relative">
+        <div className="lg:py-20 xl:py-40 py-0 xl:flex-row flex-col mx-auto  lg:px-[100px] flex gap-10 xl:gap-[5.75rem] items-center justify-center relative">
           <VideoThumbnail />
-          <div className="space-y-3 lg:w-[50rem]">
+          <div className="space-y-3 w-full xl:w-[50rem]">
             <div className="">
               <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">WHO </span>
               <span className="text-black-base text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">ARE WE?</span>
