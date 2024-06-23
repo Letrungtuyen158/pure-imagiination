@@ -7,7 +7,7 @@ import ReasonSlide from "@/components/reason-section/ReasonSlide";
 
 export default function SecondCTA() {
   return (
-    <div className="py-32 pb-[10.75rem] bg-white overflow-hidden">
+    <div className=" pt-[3rem] lg:py-32 pb-[3.75rem] lg:pb-[10.75rem] bg-white overflow-hidden">
       <Container>
         <div className="space-y-[3.125rem]">
           <div className="flex flex-col justify-center duration-300 relative transition-all">

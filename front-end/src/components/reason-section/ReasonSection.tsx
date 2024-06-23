@@ -7,7 +7,7 @@ import React from "react";
 export default function ReasonSection() {
   return (
     <Container>
-      <div className="max-w-[1920px] sm:min-h-[933px] pt-[7rem] sm:pb-[8.5rem] flex flex-col items-center relative">
+      <div className="max-w-[1920px] sm:min-h-[933px] pt-[3rem] lg:pt-[7rem] sm:pb-[8.5rem] flex flex-col items-center relative">
         <div className="flex-col justify-start items-center gap-6 inline-flex sm:mb-[5.625rem]">
           <div className="max-w-[1444px] text-center">
             <span className="text-primary-pink text-4xl sm:text-6xl font-extrabold tracking-wide leading-normal sm:leading-[72px]">MORE REASONS </span>

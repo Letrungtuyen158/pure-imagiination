@@ -11,14 +11,14 @@ import Instagram from "@/components/common/icon/Instagram";
 import Youtube from "@/components/common/icon/Youtube";
 import FacebookOur from "../common/icon/FacebookOur";
 const CustomLeftArrow = ({ onClick }: ArrowProps) => (
-  <button onClick={onClick} className="custom-left-arrow hidden sm:block">
+  <button onClick={onClick} className="custom-left-arrow  block">
     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M62.5 75L37.5 50L62.5 25" stroke="#65758B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   </button>
 );
 const CustomRightArrow = ({ onClick }: ArrowProps) => (
-  <button onClick={onClick} className="custom-right-arrow hidden sm:block">
+  <button onClick={onClick} className="custom-right-arrow block">
     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M37.5 25L62.5 50L37.5 75" stroke="#CC3284" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
