@@ -68,7 +68,7 @@ export default function CarouselSlide() {
           dotListClass="custom-dot-list-style">
           {creators.map((creator, i) => {
             return (
-              <div key={i} className="lg:py-8 py-4 justify-center flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full sm:px-28 xl:px-48">
+              <div key={i} className="lg:py-8 py-4 justify-center flex flex-col lg:flex-row items-center gap-10 lg:h-[400px] h-full px-4 sm:px-28 xl:px-48">
                 <Image
                   className="rounded-full min-w-20 select-none min-h-20 max-w-[400px] max-h-[400px] sm:mt-0"
                   layout="responsive"
