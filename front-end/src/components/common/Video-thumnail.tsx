@@ -21,9 +21,9 @@ const VideoThumbnail = () => {
   };
 
   return (
-    <div className="relative ">
-      <div>
-        <video width={616} height={346} className="object-center rounded-[2rem] " autoPlay muted loop playsInline>
+    <div className="relative w-full xl:w-[477px] xl:max-w-[616px]">
+      <div className="w-full xl:w-[477px] xl:max-w-[616px]">
+        <video width={616} height={346} className="object-center w-full xl:w-[477px] xl:max-w-[616px] rounded-[2rem] " autoPlay muted loop playsInline>
           <source src="/Pure_Imagination.mp4" type="video/mp4" />
           <source src="/Pure_Imagination.webm" type="video/webm" />
         </video>
