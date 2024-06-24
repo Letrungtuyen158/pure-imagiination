@@ -18,10 +18,8 @@ const Footer = () => {
             <h2 className="flex cursor-default min-w-[135.555px] h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"CONTACT US"} />
             </h2>
-            <div className="flex flex-col items-center md:items-start gap-4">
-              <p className="flex w-[282.26px] h-6 flex-col justify-center text-[var(--Gray-Gray-01)]  text-[16px] font-medium">hello@pureimagination.asia</p>
-              <p className="flex w-[124.422px] h-6 flex-col justify-center text-[var(--Gray-Gray-01)]  text-[16px] font-medium">0928280899</p>
-            </div>
+            <p>hello@pureimagination.asia</p>
+            <p>0928280899</p>
           </div>
           <div>
             <h2 className="font-bold  cursor-default text-xl mb-4">
