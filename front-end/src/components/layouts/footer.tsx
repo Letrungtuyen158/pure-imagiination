@@ -11,17 +11,17 @@ import HoverText from "../common/ui/HoverText";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FF3EA5]  text-white pt-10 pb-20">
-      <Container>
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-14 lg:gap-8 text-center  md:text-left">
+    <footer className="bg-[#FF3EA5]  text-white pt-10 pb-20 ">
+      <div className="max-w-[1920px] mx-auto px-[35px] lg:px-[30px] xl:px-[238px]">
+        <div className=" grid grid-cols-1 lg:grid-cols-4 gap-14 lg:gap-8 text-center  md:text-left">
           <div>
-            <h2 className="flex cursor-default min-w-[135.555px] h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
+            <h2 className="flex cursor-default  h-6 flex-col justify-center text-white  text-[20px] font-bold uppercase mb-[24px]">
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"CONTACT US"} />
             </h2>
-            <p>hello@pureimagination.asia</p>
-            <p>0928280899</p>
+            <p className="w-full break-words text-[15px]">hello@pureimagination.asia</p>
+            <p className="w-full text-wrap  text-[15px]">0928280899</p>
           </div>
-          <div>
+          <div className="lg:ml-8 xl:pl-0">
             <h2 className="font-bold  cursor-default text-xl mb-4">
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"POWERED BY"} />
             </h2>
@@ -52,8 +52,8 @@ const Footer = () => {
             <h2 className="font-bold text-xl cursor-default mb-4">
               <HoverText text={"PURE IMAGINATION"} />
             </h2>
-            <p>Headquarter: Pure Imagination Studio,</p>
-            <p>395 Lac Long Quan Street, Nghia Do, Cau Giay District, Hanoi.</p>
+            <p className="text-[15px]">Headquarter: Pure Imagination Studio,</p>
+            <p className="text-[15px]">395 Lac Long Quan Street, Nghia Do, Cau Giay District, Hanoi.</p>
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center md:text-left">
@@ -66,7 +66,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {}
         <div className="container hidden lg:block md:space-y-24  mx-auto text-center mt-6 md:mt-16   xl:mt-[50px]">
           <p className="flex flex-col sm:flex-row justify-center  space-x-[20px]">
             <span className=" cursor-default font-[monospace] text-center text-5xl sm:text-[96px] lg:text-[197.651px] text-[#FF3EA5] font-black custom-text-stroke  hover:custom-text-stroke-hover">
@@ -81,7 +80,7 @@ const Footer = () => {
             </span>
           </p>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };
