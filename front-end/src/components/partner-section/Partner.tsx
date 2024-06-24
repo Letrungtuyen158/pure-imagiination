@@ -8,10 +8,10 @@ import Marquee from "react-fast-marquee";
 export default function Partner() {
   const isMobile = useDeviceDetect();
   return (
-    <div className="w-full h-[450px] lg:h-[618px] overflow-hidden sm:py-[6.25rem] py-12 relative bg-[#FF3EA5]">
+    <div className="w-full h-[450px] sm:h-[560px] lg:h-[618px] overflow-hidden sm:py-[6.25rem] py-12 relative bg-[#FF3EA5]">
       <div className="overflow-hidden">
         <div className="text-center text-white text-2xl sm:text-5xl font-bold tracking-wide leading-normal sm:leading-[57.60px]">OUR AMAZING CUSTOMERS & PARTNERS</div>
-        <div className="xl:py-[7.625rem] flex flex-col overflow-hidden xl:mt-0 mt-[3.75rem] lg:gap-[3.75rem] gap-[1.5rem]">
+        <div className="xl:py-[7.625rem] flex flex-col overflow-hidden xl:mt-0 mt-[3.75rem] lg:gap-[3.75rem] gap-[1.5rem] sm:gap-[2.2rem]">
           <Marquee pauseOnHover autoFill speed={isMobile ? 75 : 60}>
             <div className="flex items-center gap-8 lg:gap-16 justify-center">
               {PARTNER_ICONS2.map((item, idx) => (
