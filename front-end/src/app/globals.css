@@ -19,7 +19,7 @@ body {
   margin: 0px 2.5rem 0px 0px !important;
 }
 .custom-text-stroke {
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #fff500;
   transition: -webkit-text-stroke-color 0.5s ease;
 }
@@ -28,7 +28,7 @@ body {
   --tw-text-opacity: 1;
 }
 .custom-text-stroke2 {
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: #fff500;
   transition: -webkit-text-stroke-color 0.5s ease;
 }

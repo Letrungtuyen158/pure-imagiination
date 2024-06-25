@@ -5,10 +5,11 @@ import Facebook from "../common/icon/Facebook";
 import Instagram from "../common/icon/Instagram";
 import Tiktok from "../common/icon/Tiktok";
 import Discord from "../common/icon/Discord";
-import Logo from "../common/icon/Logo";
 import LogoFooter from "../common/icon/LogoFooter";
 import HoverText from "../common/ui/HoverText";
+import { Archivo_Black } from "next/font/google";
 
+const montserrat = Archivo_Black({ weight: "400", subsets: ["latin"] });
 const Footer = () => {
   return (
     <footer className="bg-[#FF3EA5]  text-white pt-10 pb-20 ">
@@ -68,14 +69,22 @@ const Footer = () => {
         </div>
         <div className="container hidden lg:block md:space-y-24  mx-auto text-center mt-6 md:mt-16   xl:mt-[50px]">
           <p className="flex flex-col sm:flex-row justify-center  space-x-[20px]">
-            <span className=" cursor-default font-[monospace] text-center text-5xl sm:text-[96px] lg:text-[197.651px] text-[#FF3EA5] font-black custom-text-stroke  hover:custom-text-stroke-hover">
+            <span
+              className={` cursor-default  text-center text-5xl sm:text-[96px] lg:text-[140.651px] xl:text-[190.651px] text-[#FF3EA5] font-black  ${montserrat.className} custom-text-stroke  hover:custom-text-stroke-hover`}>
               DREAM
             </span>
-            <span className="cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] lg:text-[197.651px] font-bold font-[monospace] hover:text-purple-300 transition duration-500">BIG</span>
+            <span
+              className={`cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] ${montserrat.className} lg:text-[140.651px] xl:text-[190.651px] font-black   hover:text-purple-300 transition duration-500`}>
+              BIG
+            </span>
           </p>
-          <p className="flex flex-col sm:flex-row justify-center space-x-[20px] xl:space-x-[20px] lg:!mt-[30px]">
-            <span className="cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] lg:text-[164.945px] font-black font-[monospace] hover:text-purple-300 transition duration-500">EARN</span>
-            <span className="cursor-default text-center  text-5xl sm:text-[96px] lg:text-[164.945px]  font-black font-[monospace] custom-text-stroke2 hover:custom-text-stroke2-hover text-[#FF3EA5]">
+          <p className="flex flex-col sm:flex-row justify-center space-x-[20px] xl:space-x-[20px] lg:!mt-[10px] xl:!mt-[30px]">
+            <span
+              className={`cursor-default text-[#FFF] text-center  text-5xl sm:text-[96px] lg:text-[120.651px] xl:text-[190.945px] font-black ${montserrat.className}  hover:text-purple-300 transition duration-500`}>
+              EARN
+            </span>
+            <span
+              className={`cursor-default text-center  text-5xl sm:text-[96px] xl:text-[190.945px] lg:text-[120.651px]  font-black ${montserrat.className} custom-text-stroke hover:custom-text-stroke-hover text-[#FF3EA5]`}>
               BIGGER
             </span>
           </p>
