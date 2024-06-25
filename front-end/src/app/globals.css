@@ -15,6 +15,9 @@ body {
   fill: white !important;
 }
 
+.rfm-child {
+  margin: 0px 4rem 0px 0px !important;
+}
 .custom-text-stroke {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff500;

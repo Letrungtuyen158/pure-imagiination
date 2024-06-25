@@ -27,11 +27,11 @@ const VideoThumbnail = () => {
           <source src="/Pure_Imagination.mp4" type="video/mp4" />
           <source src="/Pure_Imagination.webm" type="video/webm" />
         </video>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" onClick={handleThumbnailClick}>
+        {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
           <Play />
-        </div>
+        </div> */}
       </div>
-      {isVideoLoaded && (
+      {/* {isVideoLoaded && (
         <div className="fixed w-full h-screen inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div ref={ref} className="relative max-w-3xl">
             <iframe
@@ -45,7 +45,7 @@ const VideoThumbnail = () => {
               allowFullScreen></iframe>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
