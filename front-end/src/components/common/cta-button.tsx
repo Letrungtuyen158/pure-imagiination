@@ -20,7 +20,9 @@ export default function CtaButton({
   fill?: string;
 }) {
   return (
-    <button type={type} className={cn("pl-4 group pr-2 py-2 bg-primary-pink rounded-[100px] justify-start items-center gap-2 inline-flex", classNameContainer)}>
+    <button
+      type={type}
+      className={cn("pl-4 group pr-2 py-2 bg-primary-pink border-primary-pink hover:bg-sky-400 hover:border-sky-400 rounded-[100px] justify-start items-center gap-2 inline-flex", classNameContainer)}>
       <div className={cn("text-center text-white capitalize sm:!text-xl !font-medium leading-normal", className)}>{children}</div>
       <div className="w-9 h-9 relative">
         <div className={cn("w-9 h-9 left-0 top-0 absolute bg-white rounded-[100px]", svgClass)} />
