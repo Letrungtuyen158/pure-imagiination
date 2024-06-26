@@ -31,7 +31,7 @@ const FormContactSection = () => {
     };
 
     try {
-      await emailjs.send("service_ukgbwj2", "template_4fvuv3j", templateParams, "SVRYTduJGycvBgotO");
+      await emailjs.send("service_5en9z2y", "template_1pw8mkq", templateParams, "FgssFyOf00ue4XRgJ");
       setEmail("");
       setPhoneNumber("");
       setChannel("");
