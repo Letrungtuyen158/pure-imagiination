@@ -26,7 +26,7 @@ export default function CtaSection() {
                 <span className="text-2xl font-bold leading-[38.40px] text-black bg-gradient-to-r bg-clip-text">{CTA_DATA.callingText}</span>
               </p>
             </div>
-            <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 sm:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
+            <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 2xl:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />

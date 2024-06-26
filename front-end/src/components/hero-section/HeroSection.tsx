@@ -4,7 +4,7 @@ import Image from "next/image";
 import banner from "../../../public/banner.png";
 import Container from "../common/container";
 import TextAnimation from "./TextAnimation";
-import arrow from "./arrow2222.png";
+import arrow from "./arrow.png";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -33,12 +33,12 @@ const HeroSection = () => {
             <Link
               href="#contact-us"
               onClick={handleLinkClick}
-              className="w-full h-full pl-4 group pr-2 bg-transparent group justify-start items-center gap-2  flex px-2 py-1 text-center group mx-auto   border-yellow-400 hover:bg-sky-400 hover:border-sky-400 border-[3px]  rounded-full">
-              <div className="text-center text-white capitalize sm:!text-xl !font-medium  text-base leading-normal tracking-wide"> START YOUR DREAM</div>
+              className="w-full h-full pl-4 group  pr-2  group justify-start items-center gap-2  flex px-2 py-1 text-center group mx-aut bg-primary-pink   border-primary-pink hover:bg-sky-400 hover:border-sky-400 border-[3px]  rounded-full">
+              <div className="text-center text-white capitalize  sm:!text-xl !font-semibold  text-base leading-normal tracking-wide"> START YOUR DREAM</div>
               <div className="w-9 h-9 relative">
-                <div className="w-9 h-9 left-0 top-0 absolute  bg-primary-pink  rounded-[100px]" />
-                <div className="w-3 h-3 left-[12px] top-[12px]  justify-center items-center inline-flex">
-                  <Image src={arrow} alt={"sads"} className="absolute group-hover:rotate-[135deg] duration-300 top-[10px] w-[14px] h-[14px]" />
+                <div className="w-9 h-9 left-0 top-0 absolute  bg-white  rounded-[100px]" />
+                <div className="w-3 h-3 left-[12px]   justify-center items-center inline-flex">
+                  <Image src={arrow} alt={"sads"} className="absolute top-[11px] group-hover:rotate-[135deg] duration-300 w-[14px] h-[14px]" />
                 </div>
               </div>
             </Link>
