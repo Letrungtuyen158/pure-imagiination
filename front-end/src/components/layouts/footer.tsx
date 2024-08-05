@@ -20,7 +20,7 @@ const Footer = () => {
               <HoverText classTextNormal="text-center sm:text-left sm:inline sm:w-fit block w-full" text={"CONTACT US"} />
             </h2>
             <p className="w-full break-words text-[15px]">hello@pureimagination.asia</p>
-            <p className="w-full text-wrap  text-[15px]">0928280899</p>
+            {/* <p className="w-full text-wrap  text-[15px]">0928280899</p> */}
           </div>
           <div className="lg:ml-8 xl:pl-0">
             <h2 className="font-bold  cursor-default text-xl mb-4">
