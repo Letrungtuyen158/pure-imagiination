@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import EllyAvatar from "../../../public/creators/ely.png";
-import ChikaAvatar from "../../../public/creators/Emtrai.jpg";
+import ChikaAvatar from "../../../public/creators/EMtrai.jpg";
 import KhumCanCoAvatar from "../../../public/creators/khumcanco.jpg";
 
 type Creator = {
