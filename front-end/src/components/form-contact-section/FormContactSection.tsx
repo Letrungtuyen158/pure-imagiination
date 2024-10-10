@@ -75,7 +75,7 @@ const FormContactSection = () => {
               <div className="flex flex-col lg:flex-row lg:gap-[32px] lg:w-full">
                 <div className="flex flex-col lg:w-full">
                   <label htmlFor="email" className="text-white text-lg font-medium leading-[27px] mb-2">
-                    Your channel
+                    Channel link
                   </label>
                   <input
                     type="chanel"
@@ -102,7 +102,7 @@ const FormContactSection = () => {
               </div>
               <div className="flex flex-col">
                 <label htmlFor="message" className="text-slate-300 text-lg font-medium leading-[27px] mb-2">
-                  How can I help you
+                  How can we help you?
                 </label>
                 <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} className="p-3 border-b border-white bg-transparent text-white focus:outline-none" required />
               </div>

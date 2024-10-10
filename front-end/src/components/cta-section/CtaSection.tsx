@@ -20,11 +20,10 @@ export default function CtaSection() {
             </div>
             <div className="text-black-base text-xl font-extrabold  leading-[25px]">{CTA_DATA.title}</div>
             <div className="max-w-[737px] py-3">
-              <p className="text-black-base text-base font-semibold  leading-relaxed">
+              <div className="text-black-base text-base font-semibold  leading-relaxed">
                 {CTA_DATA.description}
                 <br />
-                <span className="text-2xl font-bold leading-[38.40px] text-black bg-gradient-to-r bg-clip-text">{CTA_DATA.callingText}</span>
-              </p>
+              </div>
             </div>
             <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 2xl:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
               <div className="space-y-2 sm:space-y-0">

@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import EllyAvatar from "../../../public/creators/ely.png";
-import ChikaAvatar from "../../../public/creators/chika.jpg";
+import ChikaAvatar from "../../../public/creators/Emtrai.jpg";
 import KhumCanCoAvatar from "../../../public/creators/khumcanco.jpg";
 
 type Creator = {
@@ -38,15 +38,14 @@ export const creators: Creator[] = [
       "Khum Can Co aka Hoang Oanh, is a beloved content creator sharing her vibrant life in Korea with nearly 2 million followers. Her infectious energy, unwavering positivity, and inspiring stories have captivated audiences worldwide. We are truly honored to be among the first to earn her trust and stand beside her as she embarks on an exciting new chapter of growth and development. We can't wait to see where her incredible journey takes her!",
   },
   {
-    name: "Chi Ka",
+    name: "Ellm Zai Chi Nguyet",
     href_fb: "https://www.facebook.com/profile.php?id=100089804057098",
     href_ins: "https://www.instagram.com/chikakakay/",
     href_tik: "https://www.tiktok.com/@chikakakay",
     href_ytb: "https://www.youtube.com/@chikakakay",
     avatar: ChikaAvatar,
-    position: "Self-Growth Creator",
-    introduce:
-      "Chi Ka (Nguyen Mai Chi) has amassed a following of over 400,000, captivated by her insightful perspectives on life and valuable advice. Her sharp wit and independent spirit serve as an inspiration to many. Moreover, Chi Ka is deeply committed to empowering her community through various projects aimed at supporting both work and social initiatives.",
+    position: "Comedy Creator",
+    introduce: "Do Dinh Long, under the alias Elm Zai Chi Nguyet, is a standout creator known for his high-energy performances, in-depth knowledge of chemistry, and charming personality.",
   },
 ];
 
