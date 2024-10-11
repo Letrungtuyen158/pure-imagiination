@@ -11,7 +11,7 @@ type Creator = {
   href_fb: string;
   href_ins: string;
   href_tik: string;
-  href_ytb: string;
+  href_ytb?: string;
 };
 
 export const creators: Creator[] = [
@@ -39,10 +39,10 @@ export const creators: Creator[] = [
   },
   {
     name: "Ellm Zai Chi Nguyet",
-    href_fb: "https://www.facebook.com/profile.php?id=100089804057098",
-    href_ins: "https://www.instagram.com/chikakakay/",
-    href_tik: "https://www.tiktok.com/@chikakakay",
-    href_ytb: "https://www.youtube.com/@chikakakay",
+    href_fb: "https://www.facebook.com/profile.php?id=100029081566450",
+    href_ins: "https://www.instagram.com/pureimagination.network/",
+    href_tik: "https://www.tiktok.com/@d.dragon1712",
+    // href_ytb: "https://www.youtube.com/@chikakakay",
     avatar: ChikaAvatar,
     position: "Comedy Creator",
     introduce: "Do Dinh Long, under the alias Elm Zai Chi Nguyet, is a standout creator known for his high-energy performances, in-depth knowledge of chemistry, and charming personality.",

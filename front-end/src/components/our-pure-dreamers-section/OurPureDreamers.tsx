@@ -103,11 +103,13 @@ export default function CarouselSlide() {
                         <Tiktok className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
                       </span>
                     </a>
-                    <a href={creator.href_ytb} target="_blank" className="group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100  relative">
-                      <span className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2">
-                        <Youtube className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
-                      </span>
-                    </a>
+                    {creator.href_ytb ? (
+                      <a href={creator.href_ytb} target="_blank" className="group w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-slate-500 hover:border-none hover:bg-pink-100  relative">
+                        <span className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2">
+                          <Youtube className="fill-current text-[#15191E] group-hover:text-[#E63895]" />
+                        </span>
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </div>
