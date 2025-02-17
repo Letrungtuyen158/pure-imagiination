@@ -54,7 +54,7 @@ const Footer = () => {
               <HoverText text={"PURE IMAGINATION"} />
             </h2>
             <p className="text-[15px]">Headquarter: Pure Imagination Studio</p>
-            <p className="text-[15px]">32 An Duong Street, Tay Ho District, Hanoi.</p>
+            <p className="text-[15px]">fix test deploy</p>
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center md:text-left">
