@@ -25,7 +25,7 @@ export default function CtaSection() {
                 <br />
               </div>
             </div>
-            <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 2xl:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
+            {/* <div className="flex flex-col sm:gap-x-[4.25rem] mt-2 2xl:gap-y-5 space-y-2 sm:space-y-0 flex-wrap">
               <div className="space-y-2 sm:space-y-0">
                 <div className="h-6 items-center gap-3 flex sm:inline-flex min-w-56">
                   <Star className="w-6 h-6" />
@@ -46,7 +46,7 @@ export default function CtaSection() {
                   <div className=" text-black-base text-lg font-bold   leading-normal tracking-wide">{CTA_DATA.positions[3]}</div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="pt-7 pb-4 mb-11">
               <CtaButton className="text-base leading-normal  tracking-wide">{CTA_DATA.buttonLabel}</CtaButton>
             </div>
