@@ -40,7 +40,7 @@ export const creators: Creator[] = [
       "Khum Can Co aka Hoang Oanh, is a beloved content creator sharing her vibrant life in Korea with nearly 2 million followers. Her infectious energy, unwavering positivity, and inspiring stories have captivated audiences worldwide. We are truly honored to be among the first to earn her trust and stand beside her as she embarks on an exciting new chapter of growth and development. We can't wait to see where her incredible journey takes her!",
   },
   {
-    name: "Ellm Zai Chi Nguyet",
+    name: "Elm Zai Chi Nguyet",
     href_fb: "https://www.facebook.com/profile.php?id=100029081566450",
     href_ins: "https://www.instagram.com/pureimagination.network/",
     href_tik: "https://www.tiktok.com/@d.dragon1712",
